@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+  		<title>邓小帅的博客</title>
+  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  		<meta name="description" content="" />
+  		<meta name="keywords" content="" />
+  		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  		<script src="/js/jquery.min.js"></script>
+  		<script src="/js/jquery.poptrox.min.js"></script>
+  		<script src="/js/skel.min.js"></script>
+  		<script src="/js/init.js"></script>
+  		<noscript>
+  			<link rel="stylesheet" href="/css/skel.css" />
+  			<link rel="stylesheet" href="/css/style.css" />
+  			<link rel="stylesheet" href="/css/style-xlarge.css" />
+  		</noscript>
+  		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+  	</head>
+
+	<body id="top">
+
+      <header id="header">
+          <a href="#" class="image avatar"><img src="/images/avatar.png" alt="" /></a>
+          <h1><strong><a href="/">邓开荣</a></strong></h1>
+          如果我做不出来、<br />
+          我走、<br />
+      </header>
+
+
+        <div id="main">
+    <article>
+        <header class="major">
+            <h2 class="post-title">【Object-C】利用多线程GCD定时器的实现</h2>
+                <p class="post-meta">Dec 1, 2016</p>
+        </header>
+
+        <section>
+            <p>利用多线程GCD定时器的实现</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    weakself.timeout = 60; //倒计时时间
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0), 1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+    if(weakself.timeout&lt;=0){ //倒计时结束，关闭
+        dispatch_source_cancel(_timer);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //设置界面的按钮显示 根据自己需求设置
+            weakself.checkNumBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+            //                weakself.checkNumBtn.titleLabel.textColor = [UIColor blueColor];
+            [weakself.checkNumBtn setTitleColor:[UIColor colorWithHexString:@"#fb7e1a"] forState:UIControlStateNormal];
+            [weakself.checkNumBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+            weakself.checkNumBtn.userInteractionEnabled = YES;
+            weakself.userNameTextField.userInteractionEnabled = YES;
+            weakself.loginMudeBtn.userInteractionEnabled = YES;
+            weakself.registMudeBtn.userInteractionEnabled = YES;
+        });
+    }else{
+
+        int seconds = weakself.timeout % 61;
+        NSString *strTime = [NSString stringWithFormat:@"%.2d", seconds];
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+            //设置界面的按钮显示 根据自己需求设置
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:1];
+            weakself.checkNumBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+            //                weakself.checkNumBtn.titleLabel.textColor = [UIColor grayColor];
+            [weakself.checkNumBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+            [weakself.checkNumBtn setTitle:[NSString stringWithFormat:SENDCODE_SECONDS,strTime] forState:UIControlStateNormal];
+            [UIView commitAnimations];
+            weakself.checkNumBtn.userInteractionEnabled = NO;
+            self.userNameTextField.userInteractionEnabled = NO; // 不让编辑手机 －－ 防止发送短信后更改手机号
+            weakself.loginMudeBtn.userInteractionEnabled = NO;
+            weakself.registMudeBtn.userInteractionEnabled = NO;
+        });
+        weakself.timeout--;
+    }
+});
+dispatch_resume(_timer); // 将button类型改为custom避免按钮闪烁
+</code></pre>
+</div>
+
+        </section>
+        
+        <footer>
+            <div class="row">
+            
+            
+            
+            
+                <article class="6u 12u(small) excerpt f-right">
+                    <header>
+                        <h2><a href="/2016/12/01/file2.html">【Object-C】自定义对象的归档和解归档：例子说明以及简单总结</a></h2>
+                    </header>
+                    <section>
+                        <p>对对象进行归档，和对对象进行拷贝差不多路数，也就是需要协议，之前的时对NSString和NSNumber这些对象为什么没有归档协议？因为它们自带了。
+所以如果我们要对自定义的对象（而不是Foundation里默认的对象）进行归档的话就需要引入归档协议<NSCoding>。</NSCoding></p>
+
+
+                    </section>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="/2016/12/01/file2.html" class="button">Read More</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            
+            </div>
+        </footer>
+
+    </article>
+
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+
+              
+              <li>
+                <a href="https://github.com/dengkairong" class="icon fa-github">
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+              
+
+              <!---->
+              <!--<li>-->
+                <!--<a href="https://twitter.com/example" class="icon fa-twitter">-->
+                  <!--<span class="label">Twitter</span>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!---->
+
+              <!---->
+              <!--<li>-->
+                <!--<a href="https://linkedin.com/in/example" class="icon fa-linkedin">-->
+                  <!--<span class="label">LinkedIn</span>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!---->
+
+              <!---->
+              <!--<li>-->
+                <!--<a href="https://plus.google.com/example" class="icon fa-google-plus">-->
+                  <!--<span class="label">Google+</span>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!---->
+
+              <!---->
+              <!--<li>-->
+                <!--<a href="https://www.facebook.com/example" class="icon fa-facebook">-->
+                  <!--<span class="label">Facebook</span>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!---->
+
+              <!---->
+              <!--<li>-->
+                <!--<a href="#" class="icon fa-dribbble">-->
+                  <!--<span class="label">Dribbble</span>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!---->
+
+              
+              <li>
+                <a href="mailto:dengsir058@163.com" class="icon fa-envelope-o">
+                  <span class="label">Email</span>
+                </a>
+              </li>
+              
+            </ul>
+            <ul class="copyright">
+                <li>&copy; dengsir</li>
+                <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+                <!--<li>Demo Images: <a href="https://unsplash.com/">Unsplash</a></li>-->
+                <!--<li>Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a></li>-->
+            </ul>
+        </footer>
+
+	</body>
+</html>
