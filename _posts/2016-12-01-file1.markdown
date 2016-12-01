@@ -3,7 +3,7 @@ layout: post
 title: 【Object-C】利用多线程GCD定时器的实现
 date: 2016-12-01
 ---
-利用多线程GCD定时器的实现
+Object-C 利用多线程GCD实现一个定时器
 
         weakself.timeout = 60; //倒计时时间
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);

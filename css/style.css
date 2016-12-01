@@ -41,7 +41,7 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #333333;
 		text-decoration: none;
 	}
 
@@ -65,7 +65,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #49bf9d;;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
