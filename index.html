@@ -1,197 +1,41 @@
-<!DOCTYPE html>
-<html>
-  	<head>
-  		<title>邓小帅的博客</title>
-  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  		<meta name="description" content="" />
-  		<meta name="keywords" content="" />
-  		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-  		<script src="/js/jquery.min.js"></script>
-  		<script src="/js/jquery.poptrox.min.js"></script>
-  		<script src="/js/skel.min.js"></script>
-  		<script src="/js/init.js"></script>
-  		<noscript>
-  			<link rel="stylesheet" href="/css/skel.css" />
-  			<link rel="stylesheet" href="/css/style.css" />
-  			<link rel="stylesheet" href="/css/style-xlarge.css" />
-  		</noscript>
-  		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-  	</head>
-
-	<body id="top">
-
-      <header id="header">
-          <a href="#" class="image avatar"><img src="/images/avatar.png" alt="" /></a>
-          <h1><strong><a href="/">邓开荣</a></strong></h1>
-          如果我做不出来、<br />
-          我走、<br />
-      </header>
+---
+layout: default
+---
 
 
-        <!-- Main -->
+<!-- Main -->
 <div id="main">
     <!--<section>-->
-        <!---->
+        <!--{% for post in site.posts limit:1 %}-->
             <!--<header class="major">-->
-                <!--<h2>【Object-C】如何在Swift项目中使用OC类实现混编的解决方法</h2>-->
-                <!--<p class="post-meta">Dec 1, 2016</p>-->
+                <!--<h2>{{ post.title }}</h2>-->
+                <!--<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>-->
             <!--</header>-->
 
             <!--<section>-->
-                <!--<p>在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.</p>
-
-<ul>
-  <li>创建你需要的OC的类文件, 创建结束后, 会提示生成一个桥接头文件, 点击蓝色Create按钮.</li>
-</ul>
-
-<p><img src="/images/fulls/img1.png" class="fit image" /></p>
-
-<ul>
-  <li>这时项目中可以看到有新创建的OC文件和一个桥接文件. 桥接文件名格式默认为: 项目名-Bridging-Header.h</li>
-</ul>
-
-<p><img src="/images/fulls/img2.png" class="fit image" /></p>
-
-<ul>
-  <li>完成之后便可以在需要在调OC的地方使用.</li>
-</ul>
-
-<p><img src="/images/fulls/img3.png" class="fit image" /></p>
-
--->
+                <!--{{ post.content }}-->
             <!--</section>-->
-        <!---->
+        <!--{% endfor %}-->
     <!--</section>-->
     <section>
         <div class="row">
-            
+            {% for post in site.posts offset:0 %}
 
-                <article class="30u 12u(small)">
+                <article class="{% cycle '30u', '30u$' %} 12u(small)">
                     <header>
-                        <h2><a href="/2016/12/01/file3.html">【Object-C】如何在Swift项目中使用OC类实现混编的解决方法</a></h2>
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                     </header>
                     <section>
-                        <a href="/2016/12/01/file3.html" ><p>在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.</p>
-
-</a>
+                        <a href="{{ post.url }}" >{{ post.excerpt }}</a>
                     </section>
                     <!--<footer>-->
                         <!--<ul class="actions">-->
-                            <!--<li><a href="/2016/12/01/file3.html" class="button">Read More</a></li>-->
+                            <!--<li><a href="{{ post.url }}" class="button">Read More</a></li>-->
                         <!--</ul>-->
                     <!--</footer>-->
                 </article>
 
-            
-
-                <article class="30u$ 12u(small)">
-                    <header>
-                        <h2><a href="/2016/12/01/file2.html">【Object-C】自定义对象的归档和解归档：例子说明以及简单总结</a></h2>
-                    </header>
-                    <section>
-                        <a href="/2016/12/01/file2.html" ><p>对对象进行归档，和对对象进行拷贝差不多路数，也就是需要协议，之前的时对NSString和NSNumber这些对象为什么没有归档协议？因为它们自带了。
-所以如果我们要对自定义的对象（而不是Foundation里默认的对象）进行归档的话就需要引入归档协议<NSCoding>。</NSCoding></p>
-
-</a>
-                    </section>
-                    <!--<footer>-->
-                        <!--<ul class="actions">-->
-                            <!--<li><a href="/2016/12/01/file2.html" class="button">Read More</a></li>-->
-                        <!--</ul>-->
-                    <!--</footer>-->
-                </article>
-
-            
-
-                <article class="30u 12u(small)">
-                    <header>
-                        <h2><a href="/2016/12/01/file1.html">【Object-C】利用多线程GCD定时器的实现</a></h2>
-                    </header>
-                    <section>
-                        <a href="/2016/12/01/file1.html" ><p>Object-C 利用多线程GCD实现一个定时器</p>
-
-</a>
-                    </section>
-                    <!--<footer>-->
-                        <!--<ul class="actions">-->
-                            <!--<li><a href="/2016/12/01/file1.html" class="button">Read More</a></li>-->
-                        <!--</ul>-->
-                    <!--</footer>-->
-                </article>
-
-            
+            {% endfor %}
         </div>
     </section>
 </div>
-
-
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-
-              
-              <li>
-                <a href="https://github.com/dengkairong" class="icon fa-github">
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-              
-
-              <!---->
-              <!--<li>-->
-                <!--<a href="https://twitter.com/example" class="icon fa-twitter">-->
-                  <!--<span class="label">Twitter</span>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!---->
-
-              <!---->
-              <!--<li>-->
-                <!--<a href="https://linkedin.com/in/example" class="icon fa-linkedin">-->
-                  <!--<span class="label">LinkedIn</span>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!---->
-
-              <!---->
-              <!--<li>-->
-                <!--<a href="https://plus.google.com/example" class="icon fa-google-plus">-->
-                  <!--<span class="label">Google+</span>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!---->
-
-              <!---->
-              <!--<li>-->
-                <!--<a href="https://www.facebook.com/example" class="icon fa-facebook">-->
-                  <!--<span class="label">Facebook</span>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!---->
-
-              <!---->
-              <!--<li>-->
-                <!--<a href="#" class="icon fa-dribbble">-->
-                  <!--<span class="label">Dribbble</span>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!---->
-
-              
-              <li>
-                <a href="mailto:dengsir058@163.com" class="icon fa-envelope-o">
-                  <span class="label">Email</span>
-                </a>
-              </li>
-              
-            </ul>
-            <ul class="copyright">
-                <li>&copy; dengsir</li>
-                <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
-                <!--<li>Demo Images: <a href="https://unsplash.com/">Unsplash</a></li>-->
-                <!--<li>Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a></li>-->
-            </ul>
-        </footer>
-
-	</body>
-</html>

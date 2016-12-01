@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<div id="main">
+    <article>
+        <header class="major">
+            <h2 class="post-title">{{ page.title }}</h2>
+                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        </header>
+
+        <section>
+            {{ content }}<br/><br/><hr/>
+        </section>
+        
+        <footer>
+            <div class="row">
+
+                <div class="post-meta"> 相关博文 <div/><br/>
+            {% if page.previous %}
+            
+                <article class="{% cycle '30u', '30u$' %} 12u(small) excerpt">
+                    <header>
+                        <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+                    </header>
+                    <section>
+                        <!--{{ page.next.excerpt | markdownify }}-->
+                        <a href="{{ page.previous.url }}" >{{ page.previous.excerpt | markdownify }}</a>
+                    </section>
+                    <!--<footer>-->
+                        <!--<ul class="actions">-->
+                            <!--<a href="{{ page.previous.url }}" >{{ page.previous.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</a>-->
+                        <!--</ul>-->
+                    <!--</footer>-->
+                </article>
+            {% endif %}
+            
+            {% if page.next %}
+            
+                <article class="{% cycle '30u', '30u$' %} 12u(small) excerpt f-right">
+                    <header>
+                        <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
+                    </header>
+                    <section>
+                        <!--{{ page.next.excerpt | markdownify }}-->
+                        <a href="{{ page.next.url }}">{{ page.next.excerpt | markdownify }}</a>
+                    </section>
+                    <!--<footer>-->
+                        <!--<ul class="actions">-->
+                            <!--<a href="{{ page.next.url }}">{{ page.next.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</a>-->
+                        <!--</ul>-->
+                    <!--</footer>-->
+                </article>
+            {% endif %}
+
+            {% if page.next.next %}
+
+            <article class="{% cycle '30u', '30u$' %} 12u(small) excerpt f-right">
+                <header>
+                    <h2><a href="{{ page.next.next.url }}">{{ page.next.next.title }}</a></h2>
+                </header>
+                <section>
+                    <!--{{ page.next.excerpt | markdownify }}-->
+                    <a href="{{ page.next.next.url }}">{{ page.next.next.excerpt | markdownify }}</a>
+                </section>
+                <!--<footer>-->
+                    <!--<ul class="actions">-->
+                        <!--<a href="{{ page.next.next.url }}">{{ page.next.next.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</a>-->
+                    <!--</ul>-->
+                <!--</footer>-->
+            </article>
+            {% endif %}
+
+            </div>
+        </footer>
+
+    </article>
+
+</div>
