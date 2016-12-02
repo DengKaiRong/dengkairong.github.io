@@ -66,65 +66,71 @@
     <div class="container container-center">
       <div class="row">
         <div class="col-md-8">
-          <div class="well">
-            <div class="page-content wc-container">
+          <div class="article">
+            <div class="well">
+              <h1><a href="http://localhost:4000//2016/12/file1">【Object-C】利用多线程GCD定时器的实现</a></h1>
+              <div class="post-meta">
+                <div class="post-time">
+                  <i class="fa fa-calendar"></i>
+                  <time>01 Dec 2016</time>
+                </div>
+                <ul>
+                  
+                </ul>
+              </div>
+              <div class="post-content">
+                <div id="toc" class="toc"></div>
+                <p>Object-C 利用多线程GCD实现一个定时器</p>
 
-  <div class="post">
-    <h2 class="post_title">Posts Tagged &ldquo;tags&rdquo;</h2>
-    <ul>
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-          
-          <li class="archive_list">
-            <time>02 Aug 2015</time>
-            <a class="archive_list_article_link" href='http://localhost:4000//2015/08/analytics-tags-comments'>Analytics, tags and comments</a>
-            <p>Here you'll find how to setup analytics, tags and comments for your blog</p>
-          </li>
-          
-        
-          
-        
-      
-        
-      
-    </ul>
-  </div>
+<div class="highlighter-rouge"><pre class="highlight"><code>    weakself.timeout = 60; //倒计时时间
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0), 1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+    if(weakself.timeout&lt;=0){ //倒计时结束，关闭
+        dispatch_source_cancel(_timer);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //设置界面的按钮显示 根据自己需求设置
+            weakself.checkNumBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+            //                weakself.checkNumBtn.titleLabel.textColor = [UIColor blueColor];
+            [weakself.checkNumBtn setTitleColor:[UIColor colorWithHexString:@"#fb7e1a"] forState:UIControlStateNormal];
+            [weakself.checkNumBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+            weakself.checkNumBtn.userInteractionEnabled = YES;
+            weakself.userNameTextField.userInteractionEnabled = YES;
+            weakself.loginMudeBtn.userInteractionEnabled = YES;
+            weakself.registMudeBtn.userInteractionEnabled = YES;
+        });
+    }else{
+
+        int seconds = weakself.timeout % 61;
+        NSString *strTime = [NSString stringWithFormat:@"%.2d", seconds];
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+            //设置界面的按钮显示 根据自己需求设置
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:1];
+            weakself.checkNumBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+            //                weakself.checkNumBtn.titleLabel.textColor = [UIColor grayColor];
+            [weakself.checkNumBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+            [weakself.checkNumBtn setTitle:[NSString stringWithFormat:SENDCODE_SECONDS,strTime] forState:UIControlStateNormal];
+            [UIView commitAnimations];
+            weakself.checkNumBtn.userInteractionEnabled = NO;
+            self.userNameTextField.userInteractionEnabled = NO; // 不让编辑手机 －－ 防止发送短信后更改手机号
+            weakself.loginMudeBtn.userInteractionEnabled = NO;
+            weakself.registMudeBtn.userInteractionEnabled = NO;
+        });
+        weakself.timeout--;
+    }
+});
+dispatch_resume(_timer); // 将button类型改为custom避免按钮闪烁
+</code></pre>
 </div>
 
+                
+
+              </div>
+              
+            </div>
           </div>
         </div>
         <div class="col-md-4 hidden-xs">
@@ -167,6 +173,8 @@
         </div>
       </div>
     </div>
+    
+
   </div>
       <footer class="footer-distributed">
       <div class="container">

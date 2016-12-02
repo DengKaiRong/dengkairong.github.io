@@ -66,65 +66,46 @@
     <div class="container container-center">
       <div class="row">
         <div class="col-md-8">
-          <div class="well">
-            <div class="page-content wc-container">
+          <div class="article">
+            <div class="well">
+              <h1><a href="http://localhost:4000//2016/12/file3">【Object-C】如何在Swift项目中使用OC类实现混编的解决方法</a></h1>
+              <div class="post-meta">
+                <div class="post-time">
+                  <i class="fa fa-calendar"></i>
+                  <time>01 Dec 2016</time>
+                </div>
+                <ul>
+                  
+                </ul>
+              </div>
+              <div class="post-content">
+                <div id="toc" class="toc"></div>
+                <p>在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.</p>
 
-  <div class="post">
-    <h2 class="post_title">Posts Tagged &ldquo;tags&rdquo;</h2>
-    <ul>
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-          
-          <li class="archive_list">
-            <time>02 Aug 2015</time>
-            <a class="archive_list_article_link" href='http://localhost:4000//2015/08/analytics-tags-comments'>Analytics, tags and comments</a>
-            <p>Here you'll find how to setup analytics, tags and comments for your blog</p>
-          </li>
-          
-        
-          
-        
-      
-        
-      
-    </ul>
-  </div>
-</div>
+<ul>
+  <li>创建你需要的OC的类文件, 创建结束后, 会提示生成一个桥接头文件, 点击蓝色Create按钮.</li>
+</ul>
 
+<p><img src="/images/fulls/img1.png" class="fit image" /></p>
+
+<ul>
+  <li>这时项目中可以看到有新创建的OC文件和一个桥接文件. 桥接文件名格式默认为: 项目名-Bridging-Header.h</li>
+</ul>
+
+<p><img src="/images/fulls/img2.png" class="fit image" /></p>
+
+<ul>
+  <li>完成之后便可以在需要在调OC的地方使用.</li>
+</ul>
+
+<p><img src="/images/fulls/img3.png" class="fit image" /></p>
+
+
+                
+
+              </div>
+              
+            </div>
           </div>
         </div>
         <div class="col-md-4 hidden-xs">
@@ -167,6 +148,8 @@
         </div>
       </div>
     </div>
+    
+
   </div>
       <footer class="footer-distributed">
       <div class="container">
