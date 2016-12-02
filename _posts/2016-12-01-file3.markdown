@@ -8,13 +8,13 @@ date: 2016-12-01
 
 * 创建你需要的OC的类文件, 创建结束后, 会提示生成一个桥接头文件, 点击蓝色Create按钮.
 
-<img src="/images/fulls/img1.png" class="fit image">
+<img src="{{ '/images/fulls/img1.png' | prepend: site.baseurl | prepend: site.url }}" class="fit image">
 
 * 这时项目中可以看到有新创建的OC文件和一个桥接文件. 桥接文件名格式默认为: 项目名-Bridging-Header.h
 
-<img src="/images/fulls/img2.png" class="fit image">
+<img src="{{ '/images/fulls/img2.png' | prepend: site.baseurl | prepend: site.url }}" class="fit image">
 
 * 完成之后便可以在需要在调OC的地方使用.
 
-<img src="/images/fulls/img3.png" class="fit image">
+<img src="{{ '/images/fulls/img3.png' | prepend: site.baseurl | prepend: site.url }}" class="fit image">
 

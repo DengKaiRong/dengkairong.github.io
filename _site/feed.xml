@@ -14,19 +14,19 @@
   &lt;li&gt;创建你需要的OC的类文件, 创建结束后, 会提示生成一个桥接头文件, 点击蓝色Create按钮.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/fulls/img1.png&quot; class=&quot;fit image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/fulls/img1.png&quot; class=&quot;fit image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;这时项目中可以看到有新创建的OC文件和一个桥接文件. 桥接文件名格式默认为: 项目名-Bridging-Header.h&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/fulls/img2.png&quot; class=&quot;fit image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/fulls/img2.png&quot; class=&quot;fit image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;完成之后便可以在需要在调OC的地方使用.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/fulls/img3.png&quot; class=&quot;fit image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/fulls/img3.png&quot; class=&quot;fit image&quot; /&gt;&lt;/p&gt;
 
 </description>
 				<pubDate>Thu, 01 Dec 2016 00:00:00 +0800</pubDate>
