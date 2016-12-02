@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>dengsir</title>
+		<title>邓小帅的Blog</title>
 		<description>iOS Developer</description>
 		<link>http://localhost:4000/</link>
 		<atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>【Object-C】利用多线程GCD定时器的实现</title>
+				<title>利用多线程GCD定时器的实现</title>
 				<description>&lt;p&gt;Object-C 利用多线程GCD实现一个定时器&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    weakself.timeout = 60; //倒计时时间
@@ -60,7 +60,7 @@ dispatch_resume(_timer); // 将button类型改为custom避免按钮闪烁
 			</item>
 		
 			<item>
-				<title>【Object-C】如何在Swift项目中使用OC类实现混编的解决方法</title>
+				<title>如何在Swift项目中使用OC类实现混编的解决方法</title>
 				<description>&lt;p&gt;在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -88,7 +88,7 @@ dispatch_resume(_timer); // 将button类型改为custom避免按钮闪烁
 			</item>
 		
 			<item>
-				<title>【Object-C】自定义对象的归档和解归档：例子说明以及简单总结</title>
+				<title>自定义对象的归档和解归档：例子说明以及简单总结</title>
 				<description>&lt;p&gt;对对象进行归档，和对对象进行拷贝差不多路数，也就是需要协议，之前的时对NSString和NSNumber这些对象为什么没有归档协议？因为它们自带了。&lt;br /&gt;
 所以如果我们要对自定义的对象（而不是Foundation里默认的对象）进行归档的话就需要引入归档协议&lt;NSCoding&gt;。&lt;/NSCoding&gt;&lt;/p&gt;
 

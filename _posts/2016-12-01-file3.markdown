@@ -1,7 +1,10 @@
 ---
 layout: post
-title: 【Object-C】如何在Swift项目中使用OC类实现混编的解决方法
+title: 如何在Swift项目中使用OC类实现混编的解决方法
 date: 2016-12-01
+tags: Object-C
+description: 在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编....
+share: true
 ---
 
 在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.
