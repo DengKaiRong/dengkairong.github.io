@@ -1,17 +1,17 @@
 <div class="sidebar ">
-  <h2>Recent Posts</h2>
+  <h2>最近发表文章</h2>
   <ul>
     {% for post in site.posts limit:5 %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
 
 <div class="sidebar">
-  <h2>Tags</h2>
+  <h2>标签</h2>
   <ul>
     {% for tag in site.tags %}
-      <li><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
+      <li><a href="{{ site.baseurl | prepend: site.url }}/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
     {% endfor %}
   </ul>
 </div>

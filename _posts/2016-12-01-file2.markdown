@@ -7,19 +7,23 @@ date: 2016-12-01
 所以如果我们要对自定义的对象（而不是Foundation里默认的对象）进行归档的话就需要引入归档协议<NSCoding>。
 
 举例：声明一个User类，然后创建一个对象user1，把这个user1进行归档，然后把归档后的文件解归档到user2中，看看是否是原先的那些数据。
+
 （1）User.h
-[objc] view plain copy 在CODE上查看代码片派生到我的代码片
+        view plain copy 在CODE上查看代码片派生到我的代码片
 
         #import <Foundation/Foundation.h>
+
         @interface User : NSObject<NSCoding> //对自定义对象的归档和解归档需引入协议，就像要拷贝对象，那么这个类要引入拷贝协议一样
-        @property(nonatomic,copy) NSString *name;
-        @property(nonatomic,copy) NSString *email;
-        @property(nonatomic,copy) NSString *passwd;
-        @property(nonatomic,assign) int age;
+
+            @property(nonatomic,copy) NSString *name;
+            @property(nonatomic,copy) NSString *email;
+            @property(nonatomic,copy) NSString *passwd;
+            @property(nonatomic,assign) int age;
+
         @end
 
 （2）User.m
-[objc] view plain copy 在CODE上查看代码片派生到我的代码片
+        view plain copy 在CODE上查看代码片派生到我的代码片
 
         #import "User.h"
 
@@ -31,6 +35,7 @@ date: 2016-12-01
             [aCoder encodeObject:_email forKey:@"email"];
             [aCoder encodeObject:_passwd forKey:@"passwd"];
         }
+
         - (id)initWithCoder:(NSCoder *)aDecoder{
             self=[super init];
             if (self!=nil) {
@@ -46,8 +51,8 @@ date: 2016-12-01
 （3）main.m
 [objc] view plain copy 在CODE上查看代码片派生到我的代码片
 
-        #import <Foundation/Foundation.h>
         #import "User.h"
+        #import <Foundation/Foundation.h>
 
         int main(int argc, const charchar * argv[])
         {
