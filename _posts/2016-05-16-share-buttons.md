@@ -27,6 +27,10 @@ share:
   email: true
 {% endhighlight yml%}
 
+{% highlight yml%}
+   说到底就是非常的酷炫!
+{% endhighlight yml%}
+
 # Add new buttons
 
 To add new buttons:
