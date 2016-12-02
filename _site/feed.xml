@@ -3,8 +3,8 @@
 	<channel>
 		<title>dengsir</title>
 		<description>iOS Developer</description>
-		<link>http://localhost:4000/</link>
-		<atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Share buttons</title>
@@ -36,8 +36,8 @@ To turn them on in the header of your post add:&lt;/p&gt;
 &lt;/ol&gt;
 </description>
 				<pubDate>Mon, 16 May 2016 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2016/05/share-buttons</link>
-				<guid isPermaLink="true">http://localhost:4000//2016/05/share-buttons</guid>
+				<link>http://localhost:4000/2016/05/share-buttons</link>
+				<guid isPermaLink="true">http://localhost:4000/2016/05/share-buttons</guid>
 			</item>
 		
 			<item>
@@ -56,17 +56,17 @@ To turn them on in the header of your post add:&lt;/p&gt;
 
 &lt;p&gt;Here how it looks like on some portable devices:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/iphone_portrait.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPhone 5 portrait&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/iphone_portrait.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPhone 5 portrait&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/iphone_landscape.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPhone 5 landscape&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/iphone_landscape.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPhone 5 landscape&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/ipad_portrait.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPad mini portrait&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/ipad_portrait.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPad mini portrait&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/ipad_landscape.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPad mini landscape&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/ipad_landscape.PNG&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPad mini landscape&lt;/em&gt;&lt;/p&gt;
 </description>
 				<pubDate>Wed, 02 Dec 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/12/jekyll-clean-theme</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/12/jekyll-clean-theme</guid>
+				<link>http://localhost:4000/2015/12/jekyll-clean-theme</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/12/jekyll-clean-theme</guid>
 			</item>
 		
 			<item>
@@ -152,8 +152,8 @@ To turn them on in the header of your post add:&lt;/p&gt;
 &lt;code class=&quot;key highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt; + &lt;code class=&quot;key highlighter-rouge&quot;&gt;R&lt;/code&gt; = finds the last command matching the entered letters.&lt;/p&gt;
 </description>
 				<pubDate>Tue, 03 Nov 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/11/text-formatting</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/11/text-formatting</guid>
+				<link>http://localhost:4000/2015/11/text-formatting</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/11/text-formatting</guid>
 			</item>
 		
 			<item>
@@ -189,8 +189,8 @@ respective owners:&lt;/p&gt;
 &lt;/ul&gt;
 </description>
 				<pubDate>Mon, 02 Nov 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/11/installation</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/11/installation</guid>
+				<link>http://localhost:4000/2015/11/installation</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/11/installation</guid>
 			</item>
 		
 			<item>
@@ -200,7 +200,7 @@ respective owners:&lt;/p&gt;
 &lt;p&gt;This theme supports two types of images:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;inline images: &lt;img src=&quot;http://localhost:4000//images/batWid1.png&quot; alt=&quot;Battery Widget&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;inline images: &lt;img src=&quot;http://localhost:4000/images/batWid1.png&quot; alt=&quot;Battery Widget&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;![Battery Widget]({{ site.url | append:site.baseurl }}/images/batWid1.png)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -209,7 +209,7 @@ respective owners:&lt;/p&gt;
   &lt;li&gt;centered images with caption (optionally):&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000//images/iphone_landscape.PNG&quot; alt=&quot;screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPhone 5 landscape&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/iphone_landscape.PNG&quot; alt=&quot;screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;em&gt;iPhone 5 landscape&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;![screenshot]({{ site.baseurl | prepend:site.url}}/images/iphone_landscape.PNG){: .center-image }*iPhone 5 landscape*&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -227,8 +227,8 @@ respective owners:&lt;/p&gt;
 
 </description>
 				<pubDate>Fri, 02 Oct 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/10/images</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/10/images</guid>
+				<link>http://localhost:4000/2015/10/images</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/10/images</guid>
 			</item>
 		
 			<item>
@@ -306,8 +306,8 @@ respective owners:&lt;/p&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
 				<pubDate>Wed, 02 Sep 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/09/code-syntax-highlighting</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/09/code-syntax-highlighting</guid>
+				<link>http://localhost:4000/2015/09/code-syntax-highlighting</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/09/code-syntax-highlighting</guid>
 			</item>
 		
 			<item>
@@ -339,8 +339,8 @@ respective owners:&lt;/p&gt;
 &lt;p&gt;To enable &lt;a href=&quot;http://disqus.com&quot;&gt;Disqus&lt;/a&gt; register on the site and then just put your name in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.xml&lt;/code&gt;. Comments could be switched on and off on per post basis, just put &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: true&lt;/code&gt; to enable them.&lt;/p&gt;
 </description>
 				<pubDate>Sun, 02 Aug 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/08/analytics-tags-comments</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/08/analytics-tags-comments</guid>
+				<link>http://localhost:4000/2015/08/analytics-tags-comments</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/08/analytics-tags-comments</guid>
 			</item>
 		
 			<item>
@@ -389,8 +389,8 @@ Out-of-the box it has:&lt;/p&gt;
 
 </description>
 				<pubDate>Thu, 02 Jul 2015 00:25:06 +0800</pubDate>
-				<link>http://localhost:4000//2015/07/social-icons</link>
-				<guid isPermaLink="true">http://localhost:4000//2015/07/social-icons</guid>
+				<link>http://localhost:4000/2015/07/social-icons</link>
+				<guid isPermaLink="true">http://localhost:4000/2015/07/social-icons</guid>
 			</item>
 		
 	</channel>
