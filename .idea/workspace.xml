@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dfc7f261-edb7-49a1-9868-54932853d566" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/analytics/index.html" afterPath="$PROJECT_DIR$/_site/tag/analytics/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/code/index.html" afterPath="$PROJECT_DIR$/_site/tag/code/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/comments/index.html" afterPath="$PROJECT_DIR$/_site/tag/comments/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/images/index.html" afterPath="$PROJECT_DIR$/_site/tag/images/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/jekyll/index.html" afterPath="$PROJECT_DIR$/_site/tag/jekyll/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/tags/index.html" afterPath="$PROJECT_DIR$/_site/tag/tags/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +36,8 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="249">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -327,12 +320,12 @@
       <workItem from="1480534329469" duration="2216000" />
       <workItem from="1480559336106" duration="70000" />
       <workItem from="1480559434961" duration="7255000" />
-      <workItem from="1480659241397" duration="900000" />
+      <workItem from="1480659241397" duration="1008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11457000" />
+    <option name="totallyTimeSpent" value="11565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="738" extended-state="6" />
@@ -525,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="249">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding />
         </state>
       </provider>
