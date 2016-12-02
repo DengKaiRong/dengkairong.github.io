@@ -1,11 +1,15 @@
 <div class="sidebar ">
+  <div class="profilepic">
+    <img lazy-src="{{ '/images/avatar.png' | prepend: site.baseurl | prepend: site.url }}" style="width:120px; height:120px; border-radius:50%; overflow:hidden;" src="{{ '/images/avatar.png' | prepend: site.baseurl | prepend: site.url }}">
+    <!--<img src="{{ '/images/fulls/img1.png' | prepend: site.baseurl | prepend: site.url }}" class="fit image">-->
+  </div>
   <h2>最近发表文章</h2>
   <ul>
     {% for post in site.posts limit:5 %}
-    <div class="tagcloud">
-      <a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}" class="color5" style="font-size: 12px;">{{ post.title }}</a>
-    </div>
-    <!--<li><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></li>-->
+    <!--<div class="tagcloud">-->
+      <!--<a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}" class="color5" style="font-size: 12px;">{{ post.title }}</a>-->
+    <!--</div>-->
+    <li><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></li>
     <!--<hr>-->
     {% endfor %}
   </ul>
@@ -16,7 +20,7 @@
   <ul>
     {% for tag in site.tags %}
       <li><a href="{{ site.baseurl | prepend: site.url }}/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
-      <hr>
+      <!--<hr>-->
     {% endfor %}
   </ul>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 自定义对象的归档和解归档：例子说明以及简单总结
+title: 自定义对象的归档和解归档
 date: 2016-12-01
 tags: Object-C
 description: 对对象进行归档，和对对象进行拷贝差不多路数，也就是需要协议，之前的时对NSString和NSNumber这些对象为什么没有归档协议？因为它们自带了。

@@ -88,7 +88,7 @@ dispatch_resume(_timer); // 将button类型改为custom避免按钮闪烁
 			</item>
 		
 			<item>
-				<title>自定义对象的归档和解归档：例子说明以及简单总结</title>
+				<title>自定义对象的归档和解归档</title>
 				<description>&lt;p&gt;对对象进行归档，和对对象进行拷贝差不多路数，也就是需要协议，之前的时对NSString和NSNumber这些对象为什么没有归档协议？因为它们自带了。&lt;br /&gt;
 所以如果我们要对自定义的对象（而不是Foundation里默认的对象）进行归档的话就需要引入归档协议&lt;NSCoding&gt;。&lt;/NSCoding&gt;&lt;/p&gt;
 
