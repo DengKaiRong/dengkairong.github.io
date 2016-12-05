@@ -9,6 +9,6 @@ share: false
 
         * APP接入HTTPS并实现双向认证
         * 直播功能的实现
-        * APP框架搭建
+        * APP框架搭建(MVVM)
         * 基本掌握Swift
         * framework制作
