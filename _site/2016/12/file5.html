@@ -69,41 +69,96 @@
         <div class="col-md-8">
           <div class="article">
             <div class="well">
-              <h1><a href="http://localhost:4000//2016/12/file3">如何在Swift项目中使用OC类实现混编的解决方法</a></h1>
+              <h1><a href="http://localhost:4000//2016/12/file5">自用代码块模板</a></h1>
               <div class="post-meta">
                 <div class="post-time">
                   <i class="fa fa-calendar"></i>
-                  <time>01 Dec 2016</time>
+                  <time>02 Dec 2016</time>
                 </div>
                 <ul>
                   
-                    <li class="tagcloud"><a href="http://localhost:4000//tag/Object-C" class="color3" style="font-size: 12px;">Object-C</a></li>
+                    <li class="tagcloud"><a href="http://localhost:4000//tag/Swift" class="color3" style="font-size: 12px;">Swift</a></li>
                   
                 </ul>
               </div>
               <hr>
               <div class="post-content">
                 <div id="toc" class="toc"></div>
-                <p>在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.</p>
+                <div class="highlighter-rouge"><pre class="highlight"><code>整理常用的Swift代码模板, 个人自用
+</code></pre>
+</div>
 
 <ul>
-  <li>创建你需要的OC的类文件, 创建结束后, 会提示生成一个桥接头文件, 点击蓝色Create按钮.</li>
+  <li><code class="key highlighter-rouge">ViewController代码模板</code></li>
 </ul>
 
-<p><img src="http://localhost:4000//images/fulls/img1.png" class="fit image" /></p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: ================= 生命周期 =================</span>
+
+<span class="n">override</span> <span class="n">func</span> <span class="nf">viewDidLoad</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">viewDidLoad</span><span class="o">()</span>
+
+    <span class="n">self</span><span class="o">.</span><span class="na">initData</span><span class="o">()</span>
+
+    <span class="n">self</span><span class="o">.</span><span class="na">initUI</span><span class="o">()</span>
+
+<span class="o">}</span>
+
+<span class="n">override</span> <span class="n">func</span> <span class="nf">viewWillAppear</span><span class="o">(</span><span class="n">_</span> <span class="nl">animated:</span> <span class="n">Bool</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">viewWillAppear</span><span class="o">(</span><span class="n">animated</span><span class="o">)</span>
+
+<span class="o">}</span>
+
+<span class="n">override</span> <span class="n">func</span> <span class="nf">viewWillDisappear</span><span class="o">(</span><span class="n">_</span> <span class="nl">animated:</span> <span class="n">Bool</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">viewWillDisappear</span><span class="o">(</span><span class="n">animated</span><span class="o">)</span>
+
+<span class="o">}</span>
+
+<span class="c1">//MARK: ================= 代理方法 =================</span>
+
+<span class="c1">//MARK: ================= 事件处理 =================</span>
+
+<span class="c1">//MARK: ================= 网络数据处理 ==============</span>
+
+<span class="c1">//MARK: ================= 类和对象方法 ==============</span>
+
+<span class="c1">//MARK: 初始化数据</span>
+<span class="n">func</span> <span class="nf">initData</span><span class="o">()</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="o">{</span>
+
+<span class="o">}</span>
+
+<span class="c1">//MARK: 初始化UI</span>
+<span class="n">func</span> <span class="nf">initUI</span><span class="o">()</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="o">{</span>
+
+<span class="o">}</span>
+
+<span class="c1">//MARK: ================= 访问器 ===================</span></code></pre></figure>
 
 <ul>
-  <li>这时项目中可以看到有新创建的OC文件和一个桥接文件. 桥接文件名格式默认为: 项目名-Bridging-Header.h</li>
+  <li><code class="key highlighter-rouge">注释1</code></li>
 </ul>
 
-<p><img src="http://localhost:4000//images/fulls/img2.png" class="fit image" /></p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//--------------  &lt;#这里插入注释#&gt;  --------------//</span></code></pre></figure>
 
 <ul>
-  <li>完成之后便可以在需要在调OC的地方使用.</li>
+  <li><code class="key highlighter-rouge">注释2</code></li>
 </ul>
 
-<p><img src="http://localhost:4000//images/fulls/img3.png" class="fit image" /></p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: &lt;#注释#&gt;</span></code></pre></figure>
 
+<ul>
+  <li><code class="key highlighter-rouge">注释3</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: ================= &lt;#切割线#&gt; ===================</span></code></pre></figure>
+
+<ul>
+  <li><code class="key highlighter-rouge">添加方法</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: &lt;#方法名#&gt;</span>
+<span class="n">func</span> <span class="o">&lt;</span><span class="err">#</span><span class="n">name</span><span class="err">#</span><span class="o">&gt;(&lt;</span><span class="err">#</span><span class="n">parameters</span><span class="err">#</span><span class="o">&gt;)</span> <span class="o">-&gt;</span> <span class="o">&lt;</span><span class="err">#</span><span class="k">return</span> <span class="n">type</span><span class="err">#</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="o">&lt;</span><span class="err">#</span><span class="n">function</span> <span class="n">body</span><span class="err">#</span><span class="o">&gt;</span>
+<span class="o">}</span></code></pre></figure>
 
                 
 
@@ -111,7 +166,7 @@
   <ul class="share-buttons">
     
     <li class="share-facebook">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2016/12/file3" target="_blank" title="Share on Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2016/12/file5" target="_blank" title="Share on Facebook">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-facebook fa-stack-1x"></i>
@@ -122,7 +177,7 @@
 
     
     <li class="share-twitter">
-      <a href="https://twitter.com/intent/tweet?url=http://localhost:4000/2016/12/file3&text=如何在Swift项目中使用OC类实现混编的解决方法" target="_blank" title="Tweet">
+      <a href="https://twitter.com/intent/tweet?url=http://localhost:4000/2016/12/file5&text=自用代码块模板" target="_blank" title="Tweet">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-twitter fa-stack-1x"></i>
@@ -133,7 +188,7 @@
 
     
     <li class="share-google-plus">
-      <a href="https://plus.google.com/share?url=http://localhost:4000/2016/12/file3" target="_blank" title="Share on Google Plus">
+      <a href="https://plus.google.com/share?url=http://localhost:4000/2016/12/file5" target="_blank" title="Share on Google Plus">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-google-plus fa-stack-1x"></i>
@@ -144,7 +199,7 @@
 
     
     <li class="share-linkedin">
-      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2016/12/file3&title=如何在Swift项目中使用OC类实现混编的解决方法&summary=在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编....&source=" target="_blank" title="Share on LinkedIn">
+      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2016/12/file5&title=自用代码块模板&summary=&source=" target="_blank" title="Share on LinkedIn">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-linkedin fa-stack-1x"></i>
@@ -155,7 +210,7 @@
 
     
     <li class="share-pinterest">
-      <a href="http://pinterest.com/pin/create/button/?urlhttp://localhost:4000/2016/12/file3=&description=在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编...." target="_blank" title="Pin it">
+      <a href="http://pinterest.com/pin/create/button/?urlhttp://localhost:4000/2016/12/file5=&description=" target="_blank" title="Pin it">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-pinterest fa-stack-1x"></i>
@@ -166,7 +221,7 @@
 
     
     <li class="share-envelope">
-      <a href="mailto:?&subject=如何在Swift项目中使用OC类实现混编的解决方法&body=在已有的Swift工程中, 当你需要使用OC的类文件, 或者需要集成SDK时可能会遇到需要实现Swift和Object-C混编的方式, 可以通过以下步骤轻松实现项目中混编.... http://localhost:4000/2016/12/file3" target="_blank" title="Email">
+      <a href="mailto:?&subject=自用代码块模板&body= http://localhost:4000/2016/12/file5" target="_blank" title="Email">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-envelope-o fa-stack-1x"></i>
