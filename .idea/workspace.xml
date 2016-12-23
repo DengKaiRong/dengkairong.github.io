@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfc7f261-edb7-49a1-9868-54932853d566" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-12-22-file6.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-12-01-file1.markdown" afterPath="$PROJECT_DIR$/_posts/2016-12-01-file1.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-12-01-file2.markdown" afterPath="$PROJECT_DIR$/_posts/2016-12-01-file2.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-12-01-file3.markdown" afterPath="$PROJECT_DIR$/_posts/2016-12-01-file3.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/12/file1.html" afterPath="$PROJECT_DIR$/_site/2016/12/file1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/12/file2.html" afterPath="$PROJECT_DIR$/_site/2016/12/file2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/12/file3.html" afterPath="$PROJECT_DIR$/_site/2016/12/file3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/12/file4.html" afterPath="$PROJECT_DIR$/_site/2016/12/file4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/12/file5.html" afterPath="$PROJECT_DIR$/_site/2016/12/file5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about.html" afterPath="$PROJECT_DIR$/_site/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/archive.html" afterPath="$PROJECT_DIR$/_site/archive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/Object-C/index.html" afterPath="$PROJECT_DIR$/_site/tag/Object-C/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/Skill/index.html" afterPath="$PROJECT_DIR$/_site/tag/Skill/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/Swift/index.html" afterPath="$PROJECT_DIR$/_site/tag/Swift/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tags.html" afterPath="$PROJECT_DIR$/_site/tags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-12-22-file6.markdown" afterPath="$PROJECT_DIR$/_posts/2016-12-22-file6.markdown" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2016-12-22-file6.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1770">
-                <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <first_editor relative-caret-position="285">
+                <caret line="51" column="48" lean-forward="true" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -84,7 +67,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="105">
-                <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+                <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -199,10 +182,10 @@
         <option value="$PROJECT_DIR$/_includes/sidebar.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_posts/2016-12-06-file5.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2016-12-22-file6.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-12-01-file1.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-12-01-file2.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-12-01-file3.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2016-12-22-file6.markdown" />
       </list>
     </option>
   </component>
@@ -436,12 +419,12 @@
       <workItem from="1480904897370" duration="4102000" />
       <workItem from="1481111156488" duration="1541000" />
       <workItem from="1481680712430" duration="1000" />
-      <workItem from="1482404464530" duration="1802000" />
+      <workItem from="1482404464530" duration="1949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28396000" />
+    <option name="totallyTimeSpent" value="28543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="738" extended-state="6" />
@@ -707,7 +690,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="105">
-            <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
@@ -761,8 +744,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-12-22-file6.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1770">
-            <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <first_editor relative-caret-position="285">
+            <caret line="51" column="48" lean-forward="true" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
             <folding />
           </first_editor>
           <second_editor />

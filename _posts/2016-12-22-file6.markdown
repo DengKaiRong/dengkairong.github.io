@@ -41,8 +41,6 @@ share: true
 
 }
 
-#pragma mark - =============网络数据处理==============
-
 #pragma mark - =============代理方法=================
 
 - (void)forSuccessResult:(SYResult *)result{}
@@ -50,6 +48,8 @@ share: true
 - (void)forFailureResult:(SYResult *)errorResult{}
 
 #pragma mark - =============事件处理=================
+
+#pragma mark - =============网络数据处理==============
 
 #pragma mark - =============声明的成员方法和类方法======
 
