@@ -43,13 +43,19 @@ share: true
 
 #pragma mark - =============代理方法=================
 
-- (void)forSuccessResult:(SYResult *)result{}
-
-- (void)forFailureResult:(SYResult *)errorResult{}
-
 #pragma mark - =============事件处理=================
 
 #pragma mark - =============网络数据处理==============
+
+#pragma mark - SYBaseViewControllerDelegate
+
+- (void)forSuccessResult:(SYResult *)result{
+    //网络数据请求成功
+}
+
+- (void)forFailureResult:(SYResult *)errorResult{
+    //网络数据请求失败
+}
 
 #pragma mark - =============声明的成员方法和类方法======
 
