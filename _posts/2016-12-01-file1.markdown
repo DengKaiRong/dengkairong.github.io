@@ -2,7 +2,7 @@
 layout: post
 title: 利用多线程GCD定时器的实现
 date: 2016-12-01 16:25:06
-tags: Object-C
+tags: Objective-C
 description: 利用多线程GCD实现一个简单的定时器
 share: true
 ---

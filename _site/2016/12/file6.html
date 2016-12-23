@@ -69,7 +69,7 @@
         <div class="col-md-8">
           <div class="article">
             <div class="well">
-              <h1><a href="http://localhost:4000//2016/12/file5">自用代码块模板</a></h1>
+              <h1><a href="http://localhost:4000//2016/12/file6">自用代码块模板</a></h1>
               <div class="post-meta">
                 <div class="post-time">
                   <i class="fa fa-calendar"></i>
@@ -77,14 +77,14 @@
                 </div>
                 <ul>
                   
-                    <li class="tagcloud"><a href="http://localhost:4000//tag/Swift" class="color3" style="font-size: 12px;">Swift</a></li>
+                    <li class="tagcloud"><a href="http://localhost:4000//tag/Objective-C" class="color3" style="font-size: 12px;">Objective-C</a></li>
                   
                 </ul>
               </div>
               <hr>
               <div class="post-content">
                 <div id="toc" class="toc"></div>
-                <div class="highlighter-rouge"><pre class="highlight"><code>整理常用的Swift代码模板, 个人自用
+                <div class="highlighter-rouge"><pre class="highlight"><code>整理常用的Objective-C代码模板, 个人自用
 </code></pre>
 </div>
 
@@ -92,46 +92,62 @@
   <li><code class="key highlighter-rouge">ViewController代码模板</code></li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: ================= 生命周期 =================</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">生命周期</span><span class="o">================</span>
 
-<span class="n">override</span> <span class="n">func</span> <span class="nf">viewDidLoad</span><span class="o">()</span> <span class="o">{</span>
-    <span class="kd">super</span><span class="o">.</span><span class="na">viewDidLoad</span><span class="o">()</span>
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="err">视图加载数据完毕</span>
 
-    <span class="n">self</span><span class="o">.</span><span class="na">initData</span><span class="o">()</span>
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="n">viewDidLoad</span> <span class="o">{</span>
 
-    <span class="n">self</span><span class="o">.</span><span class="na">initUI</span><span class="o">()</span>
+    <span class="o">[</span><span class="kd">super</span> <span class="n">viewDidLoad</span><span class="o">];</span>
 
-<span class="o">}</span>
-
-<span class="n">override</span> <span class="n">func</span> <span class="nf">viewWillAppear</span><span class="o">(</span><span class="n">_</span> <span class="nl">animated:</span> <span class="n">Bool</span><span class="o">)</span> <span class="o">{</span>
-    <span class="kd">super</span><span class="o">.</span><span class="na">viewWillAppear</span><span class="o">(</span><span class="n">animated</span><span class="o">)</span>
-
-<span class="o">}</span>
-
-<span class="n">override</span> <span class="n">func</span> <span class="nf">viewWillDisappear</span><span class="o">(</span><span class="n">_</span> <span class="nl">animated:</span> <span class="n">Bool</span><span class="o">)</span> <span class="o">{</span>
-    <span class="kd">super</span><span class="o">.</span><span class="na">viewWillDisappear</span><span class="o">(</span><span class="n">animated</span><span class="o">)</span>
+    <span class="c1">//设置代理</span>
+    <span class="n">self</span><span class="o">.</span><span class="na">deletage</span> <span class="o">=</span> <span class="n">self</span><span class="o">;</span>
+    <span class="c1">//设置UI</span>
+    <span class="o">[</span><span class="n">self</span> <span class="n">setUI</span><span class="o">];</span>
+    <span class="c1">//初始化数据</span>
+    <span class="o">[</span><span class="n">self</span> <span class="n">setData</span><span class="o">];</span>
 
 <span class="o">}</span>
 
-<span class="c1">//MARK: ================= 代理方法 =================</span>
-
-<span class="c1">//MARK: ================= 事件处理 =================</span>
-
-<span class="c1">//MARK: ================= 网络数据处理 ==============</span>
-
-<span class="c1">//MARK: ================= 类和对象方法 ==============</span>
-
-<span class="c1">//MARK: 初始化数据</span>
-<span class="n">func</span> <span class="nf">initData</span><span class="o">()</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="o">{</span>
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="err">视图将要显示</span>
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="nl">viewWillAppear:</span><span class="o">(</span><span class="n">BOOL</span><span class="o">)</span><span class="n">animated</span><span class="o">{</span>
+    <span class="o">[</span><span class="kd">super</span> <span class="nl">viewWillAppear:</span><span class="n">animated</span><span class="o">];</span>
 
 <span class="o">}</span>
 
-<span class="c1">//MARK: 初始化UI</span>
-<span class="n">func</span> <span class="nf">initUI</span><span class="o">()</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="o">{</span>
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="err">视图将要消失</span>
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="nl">viewWillDisappear:</span><span class="o">(</span><span class="n">BOOL</span><span class="o">)</span><span class="n">animated</span><span class="o">{</span>
+    <span class="o">[</span><span class="kd">super</span> <span class="nl">viewWillDisappear:</span><span class="n">animated</span><span class="o">];</span>
 
 <span class="o">}</span>
 
-<span class="c1">//MARK: ================= 访问器 ===================</span></code></pre></figure>
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">网络数据处理</span><span class="o">==============</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">代理方法</span><span class="o">=================</span>
+
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="nl">forSuccessResult:</span><span class="o">(</span><span class="n">SYResult</span> <span class="o">*)</span><span class="n">result</span><span class="o">{}</span>
+
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="nl">forFailureResult:</span><span class="o">(</span><span class="n">SYResult</span> <span class="o">*)</span><span class="n">errorResult</span><span class="o">{}</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">事件处理</span><span class="o">=================</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">声明的成员方法和类方法</span><span class="o">======</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">私有方法</span><span class="o">=================</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="err">初始化</span><span class="n">UI</span>
+<span class="c1">//初始化UI</span>
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="n">setUI</span><span class="o">{</span>
+
+<span class="o">}</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="err">初始化数据</span>
+<span class="c1">//初始化数据</span>
+<span class="o">-</span> <span class="o">(</span><span class="kt">void</span><span class="o">)</span><span class="n">setData</span><span class="o">{</span>
+
+<span class="o">}</span>
+
+<span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">=============</span><span class="err">访问器方法</span><span class="o">===============</span></code></pre></figure>
 
 <ul>
   <li><code class="key highlighter-rouge">注释1</code></li>
@@ -143,21 +159,32 @@
   <li><code class="key highlighter-rouge">注释2</code></li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: &lt;#注释#&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">&lt;</span><span class="err">#注释#</span><span class="o">&gt;</span></code></pre></figure>
 
 <ul>
   <li><code class="key highlighter-rouge">注释3</code></li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: ================= &lt;#切割线#&gt; ===================</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">========</span> <span class="o">&lt;</span><span class="err">#切割线#</span><span class="o">&gt;</span> <span class="o">========</span></code></pre></figure>
 
 <ul>
-  <li><code class="key highlighter-rouge">添加方法</code></li>
+  <li><code class="key highlighter-rouge">添加类方法</code></li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//MARK: &lt;#方法名#&gt;</span>
-<span class="n">func</span> <span class="o">&lt;</span><span class="err">#</span><span class="n">name</span><span class="err">#</span><span class="o">&gt;(&lt;</span><span class="err">#</span><span class="n">parameters</span><span class="err">#</span><span class="o">&gt;)</span> <span class="o">-&gt;</span> <span class="o">&lt;</span><span class="err">#</span><span class="k">return</span> <span class="n">type</span><span class="err">#</span><span class="o">&gt;</span> <span class="o">{</span>
-    <span class="o">&lt;</span><span class="err">#</span><span class="n">function</span> <span class="n">body</span><span class="err">#</span><span class="o">&gt;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">&lt;</span><span class="err">#方法用途#</span><span class="o">&gt;</span>
+
+<span class="o">+</span> <span class="o">(&lt;</span><span class="err">#返回类型#</span><span class="o">&gt;)&lt;</span><span class="err">#方法名#</span><span class="o">&gt;{</span>
+    <span class="o">&lt;</span><span class="err">#代码#</span><span class="o">&gt;</span>
+<span class="o">}</span></code></pre></figure>
+
+<ul>
+  <li><code class="key highlighter-rouge">添加成员方法</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="err">#</span><span class="n">pragma</span> <span class="n">mark</span> <span class="o">-</span> <span class="o">&lt;</span><span class="err">#方法用途#</span><span class="o">&gt;</span>
+
+<span class="o">-</span> <span class="o">(&lt;</span><span class="err">#返回类型#</span><span class="o">&gt;)&lt;</span><span class="err">#方法名#</span><span class="o">&gt;{</span>
+    <span class="o">&lt;</span><span class="err">#代码#</span><span class="o">&gt;</span>
 <span class="o">}</span></code></pre></figure>
 
                 
@@ -166,7 +193,7 @@
   <ul class="share-buttons">
     
     <li class="share-facebook">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2016/12/file5" target="_blank" title="Share on Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2016/12/file6" target="_blank" title="Share on Facebook">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-facebook fa-stack-1x"></i>
@@ -177,7 +204,7 @@
 
     
     <li class="share-twitter">
-      <a href="https://twitter.com/intent/tweet?url=http://localhost:4000/2016/12/file5&text=自用代码块模板" target="_blank" title="Tweet">
+      <a href="https://twitter.com/intent/tweet?url=http://localhost:4000/2016/12/file6&text=自用代码块模板" target="_blank" title="Tweet">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-twitter fa-stack-1x"></i>
@@ -188,7 +215,7 @@
 
     
     <li class="share-google-plus">
-      <a href="https://plus.google.com/share?url=http://localhost:4000/2016/12/file5" target="_blank" title="Share on Google Plus">
+      <a href="https://plus.google.com/share?url=http://localhost:4000/2016/12/file6" target="_blank" title="Share on Google Plus">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-google-plus fa-stack-1x"></i>
@@ -199,7 +226,7 @@
 
     
     <li class="share-linkedin">
-      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2016/12/file5&title=自用代码块模板&summary=&source=" target="_blank" title="Share on LinkedIn">
+      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2016/12/file6&title=自用代码块模板&summary=&source=" target="_blank" title="Share on LinkedIn">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-linkedin fa-stack-1x"></i>
@@ -210,7 +237,7 @@
 
     
     <li class="share-pinterest">
-      <a href="http://pinterest.com/pin/create/button/?urlhttp://localhost:4000/2016/12/file5=&description=" target="_blank" title="Pin it">
+      <a href="http://pinterest.com/pin/create/button/?urlhttp://localhost:4000/2016/12/file6=&description=" target="_blank" title="Pin it">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-pinterest fa-stack-1x"></i>
@@ -221,7 +248,7 @@
 
     
     <li class="share-envelope">
-      <a href="mailto:?&subject=自用代码块模板&body= http://localhost:4000/2016/12/file5" target="_blank" title="Email">
+      <a href="mailto:?&subject=自用代码块模板&body= http://localhost:4000/2016/12/file6" target="_blank" title="Email">
         <span class="fa-stack fa-lg">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-envelope-o fa-stack-1x"></i>
