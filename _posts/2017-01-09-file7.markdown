@@ -28,8 +28,8 @@ Android Studio
 ========== 个人目标 ==========
 
 {% highlight yml %}
- Financial freedom
- Mac NoteBooks
- Buy insurance for parents
- Find a girlfriend
+Financial freedom
+Mac NoteBooks
+Buy insurance for parents
+Find a girlfriend
 {% endhighlight yml %}
