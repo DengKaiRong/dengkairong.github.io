@@ -7,23 +7,29 @@ description:
 share: true
 ---
 
-#2017个人目标
+# 2017个人目标
 
 ========== 开发技能 ==========
 
+{% highlight yml %}
 	* React Native (JS)
 	* VUE (JS)
 	* Android (Java)
-
+{% endhighlight yml %}
+	
 ========== 开发工具 ==========
 
+{% highlight yml %}
 	* VIM 
 	* Sublime Text
 	* Android Studio
+{% endhighlight yml %}
 
 ========== 个人目标 ==========
 
+{% highlight yml %}
 	* Financial freedom
 	* Mac NoteBooks
 	* Buy insurance for parents
 	* Find a girlfriend
+{% endhighlight yml %}
