@@ -7,23 +7,23 @@ description:
 share: true
 ---
 
-    2017个人目标
+#2017个人目标
 
-	========== 开发技能 ==========
+========== 开发技能 ==========
 
 	* React Native (JS)
 	* VUE (JS)
 	* Android (Java)
 
-	========== 开发工具 ==========
+========== 开发工具 ==========
 
 	* VIM 
 	* Sublime Text
 	* Android Studio
 
-	========== 个人目标 ==========
+========== 个人目标 ==========
 
-	* 财务自由
+	* Financial freedom
 	* Mac NoteBooks
-	* 为父母买保险
-	* 找一个女朋友
+	* Buy insurance for parents
+	* Find a girlfriend
