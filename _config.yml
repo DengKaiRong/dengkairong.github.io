@@ -1,9 +1,9 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Jalpc
-description: Jack's blog,use Jekyll and github pages.
-keywords: Jack,Jalpc,blog,Jekyll,github,gh-pages
+title: 邓小帅的博客
+description: dengsir's blog
+keywords: dengsir,邓小帅,blog,Jekyll,github
 baseurl:  /blog # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: http://dengkairong.github.io/blog  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
@@ -11,15 +11,15 @@ img_path: /blog/static/assets/img/blog  # url should be '/homepage/static/assets
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: GitHub  # Be used at blog posts' author.
-  first_name: Hub  # Be used at index page about me section.
-  last_name: Git  # Be used at index page about me section.
+  name: 邓小帅  # Be used at blog posts' author.
+  first_name: 小帅  # Be used at index page about me section.
+  last_name: 邓  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username: jarrekk  # Leave blank if you don't have now
-  linkedin_id: kun-jia-991264a2 # Leave blank if you don't have now
-  facebook_username: jiakunnj  # Leave blank if you don't have now
-  twitter_username: jiakun614  # Leave blank if you don't have now
-  email: me@jarrekk.com  # Leave blank if you don't have now
+  github_username: dengkairong  # Leave blank if you don't have now
+  #linkedin_id: kun-jia-991264a2 # Leave blank if you don't have now
+  #facebook_username: jiakunnj  # Leave blank if you don't have now
+  #twitter_username: jiakun614  # Leave blank if you don't have now
+  email: dengsir058@qq.com # Leave blank if you don't have now
   cv: http://cv.jarrekk.com  # A online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
@@ -32,7 +32,7 @@ author:  # change following line to your infomation.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: jalpc
+  name: 邓小帅
   public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
 
 # analytics
