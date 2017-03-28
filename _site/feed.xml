@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jalpc</title>
-    <description>Jack's blog,use Jekyll and github pages.</description>
-    <link>http://localhost:4000/Jalpc/</link>
-    <atom:link href="http://localhost:4000/Jalpc/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Mar 2017 23:13:16 +0800</pubDate>
-    <lastBuildDate>Sat, 25 Mar 2017 23:13:16 +0800</lastBuildDate>
+    <title>邓小帅的进阶之路</title>
+    <description>dengsir's blog</description>
+    <link>http://localhost:4000/blog/</link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 28 Mar 2017 17:40:59 +0800</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 17:40:59 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -19,8 +19,8 @@
   &lt;li&gt;
     &lt;p&gt;Fork &lt;a href=&quot;https://github.com/jarrekk/Jalpc&quot;&gt;this project – Jalpc&lt;/a&gt; at &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;. If you want to edit website at github, do it as following gif or clone forked repository. &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone git@github.com:github_username/Jalpc.git&lt;/code&gt;.&lt;/p&gt;
 
-    &lt;p&gt;&lt;!-- ![edit](/Jalpc/static/assets/img/blog/3steps/edit.gif) --&gt;
- &lt;img src=&quot;/Jalpc/static/assets/img/blog/3steps/edit.gif&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![edit](/blog/static/assets/img/blog/3steps/edit.gif) --&gt;
+ &lt;img src=&quot;/blog/static/assets/img/blog/3steps/edit.gif&quot; width=&quot;75%&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Enter into repository directory and edit following file list:&lt;/p&gt;
@@ -56,8 +56,8 @@
 &lt;p&gt;If you like this repository, I appreciate you star this repository. Please don’t hesitate to mail me or post issues on GitHub if you have any questions. Hope you have a happy blog time!😊&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Jan 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Jalpc/html/2017/01/31/3-steps-to-setup-website-with-Jalpc.html</link>
-        <guid isPermaLink="true">http://localhost:4000/Jalpc/html/2017/01/31/3-steps-to-setup-website-with-Jalpc.html</guid>
+        <link>http://localhost:4000/blog/html/2017/01/31/3-steps-to-setup-website-with-Jalpc.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/html/2017/01/31/3-steps-to-setup-website-with-Jalpc.html</guid>
         
         <category>Jalpc</category>
         
