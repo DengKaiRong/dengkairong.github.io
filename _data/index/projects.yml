@@ -1,21 +1,30 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
-  i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
 
-- name: LeetCode
-  i18n: leetcode
-  gh_user: kamyu104
-  repo: LeetCode
-  img: /static/assets/img/landing/leetcode.png
-  desc: This project is other's project. I use another request to get repo's information.
-
-- name: FamilyCODE Wchat
+- name: 爱牛股
   i18n: familycode
-  img: /static/assets/img/landing/familycode.png
-  desc: This is a shopping mall in wechat, it promotes gene detection. Since time is precious, I write this website with Django, jQuery, weui. This is WuxiNextcode's major product. You can scan project's picture by wechat.
+  img: /static/assets/img/landing/ainiuguLogo.png
+  desc: 本人所负责的APP项目之一.</br>爱牛股是由广州金蜜蜂网络科技专为股民推出的一款炒股资讯平台。爱牛股致力于为投资者提供专业、合规、便捷的投资服务。
+
+- name: 决策天机
+  i18n: familycode
+  img: /static/assets/img/landing/jctjLogo.png
+  desc: 本人所负责的APP项目之一.</br>决策天机，是集大数据诊股、智能选股、在线问股、组合以及视频直播于一体的综合性炒股(金融/投资/理财/诊股)平台，我们希望做您身边的股票专家，让您的每一笔投资都有价值。
+
+- name: 金决策
+  i18n: familycode
+  img: /static/assets/img/landing/jjcLogo.png
+  desc: 本人所负责的APP项目之一.</br>金决策，是集大数据诊股、智能选股、在线问股、组合以及视频直播于一体的综合性炒股(金融/投资/理财/诊股)平台，我们希望做您身边的股票专家，让您的每一笔投资都有价值。
+
+- name: 盘口大师
+  i18n: familycode
+  img: /static/assets/img/landing/pkdsLogo.png
+  desc: 本人所负责的APP项目之一.</br>盘口大师，是集大数据诊股、智能选股、在线问股、组合以及视频直播于一体的综合性炒股(金融/投资/理财/诊股)平台，我们希望做您身边的股票专家，让您的每一笔投资都有价值。
+
+- name: MyBlog
+  i18n: jalpc
+  gh_user: dengkairong
+  repo: blog
+  img: /static/assets/img/landing/githubLogo.png
+  desc: 本博客的github开源项目.

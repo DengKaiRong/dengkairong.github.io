@@ -1,18 +1,18 @@
 # links section data
-- last_name: Name 1
-  first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+- last_name: deng
+  first_name: sir
+  desc: 我的码云主页
+  website: https://git.oschina.net/dengsir058
+  email: dengsir058@163.com
+  
+- last_name: My
+  first_name: GitHub
+  desc: 我的GitHub主页
+  website: https://github.com/dengkairong
+  email: dengsir058@163.com
 
-- last_name: Donate
-  first_name: Jalpc
-  desc: Support Jalpc
-  website: http://www.jarrekk.com/donate/
-  email: me@jarrekk.com
-
-- last_name: LN
-  first_name: FN
-  desc: COO
-  website: https://github.com
-  email: coo@google.com
+- last_name: App
+  first_name: Store
+  desc: 最近App项目 (决策天机App)
+  website: https://itunes.apple.com/cn/app/%E5%86%B3%E7%AD%96%E5%A4%A9%E6%9C%BA/id1209938998?l=en&mt=8
+  email: dengsir058@163.com
