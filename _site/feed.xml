@@ -5,8 +5,8 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Mar 2017 15:07:44 +0800</pubDate>
-    <lastBuildDate>Wed, 29 Mar 2017 15:07:44 +0800</lastBuildDate>
+    <pubDate>Wed, 29 Mar 2017 15:11:28 +0800</pubDate>
+    <lastBuildDate>Wed, 29 Mar 2017 15:11:28 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
