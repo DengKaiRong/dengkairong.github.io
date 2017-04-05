@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: 邓小帅的进阶之路
+title: 我叫邓小帅
 description: dengsir's blog
 keywords: dengsir,邓小帅,blog,Jekyll,github
 baseurl:  /blog # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
