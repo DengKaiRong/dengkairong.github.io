@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
+        <loc>http://localhost:4000/ios/2017/04/06/iOS-jsonkit-error-handle.html</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/ios/2017/04/06/iOS-Screen-rotate-headle.html</loc>
+    </url>
+
+    <url>
         <loc>http://localhost:4000/ios/2017/04/05/iOS-dimiss-error-info.html</loc>
     </url>
 

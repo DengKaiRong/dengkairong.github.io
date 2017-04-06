@@ -7,12 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+    <meta content="iOS-单独让某个控制器横屏" name="description">
+  
+  
+    <meta name="keywords" content="iOS,屏幕横屏">
   
   <meta name="author" content="邓小帅">
 
   <title>
     
-        我叫邓小帅|Blog
+        我叫邓小帅|iOS-单独让某个控制器横屏
     
   </title>
   <!-- favicon -->
@@ -125,7 +129,7 @@
                     
                         
                         
-                        <li class="active">
+                        <li>
                         
                         <a class="page-scroll" href="/blog/blog/">Blog</a></li>
                         
@@ -202,125 +206,180 @@
 
 	
 
-        <div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="navy-line"></div>
-        <h1>Latest Blog</h1>
-    </div>
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">iOS</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+            
+                        <h1>
+                            iOS-单独让某个控制器横屏
+                        </h1>
+
+                        <span class="text-muted"><i class="fa fa-clock-o"></i> 6 Apr 2017</span>
+                        
+                    </div>
+                    	<h3 id="ios程序开发中若要单独让某个控制器横屏可以用如下方法">iOS程序开发中，若要单独让某个控制器横屏，可以用如下方法：</h3>
+
+<p>在 AppDelegate.h 添加属性：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> <span class="c1">//屏幕方向  
+</span> <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">allowRotation</span><span class="p">;</span> 
+</code></pre>
 </div>
 
-<div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <div class="wrapper wrapper-content animated fadeInRight">
+<p>在 AppDelegate.m 添加方法：</p>
 
-            <!-- latest 10 blog -->
-			
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
+<div class="highlighter-rouge"><pre class="highlight"><code> - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window  
+ {  
+
+     if (_allowRotation == 1) {  
+
+         return UIInterfaceOrientationMaskLandscapeRight;  
+           
+     }else {  
+
+         return UIInterfaceOrientationMaskPortrait;  
+
+     }  
+ }  
+</code></pre>
+</div>
+
+<p>可以在跳转控制器中设置:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> HWGoalVC *vc = [[HWGoalVC alloc] init];  
+ [self.navigationController presentViewController:vc animated:YES completion:nil]; 
+</code></pre>
+</div>
+
+<p>在目标控制器中设置：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;  
+ appDelegate.allowRotation = 1;
+</code></pre>
+</div>
+
+<p>在目标控制器返回时设置：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> - (void)back  
+ {  
+
+     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;  
+
+     appDelegate.allowRotation = 0;  
+
+     [self dismissViewControllerAnimated:YES completion:nil];  
+ } 
+</code></pre>
+</div>
+
+<p>若想隐藏StatusBar，可调用如下方法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> - (BOOL)prefersStatusBarHidden  
+ {  
+	//iOS7前隐藏StatusBar  
+	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+	//iOS7以后隐藏StatusBar  	
+	return YES;  
+ }
+</code></pre>
+</div>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">iOS</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">Objective-C</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">横屏</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">开发</button>
+                                
                         </div>
-                        <a href="/blog/ios/2017/04/06/iOS-jsonkit-error-handle.html" class="vote-title">
-                            iOS-JSONKit编译报错解决方法
-                        </a>
-                        <div class="vote-info">
-                        
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/06/iOS-jsonkit-error-handle.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>6 Apr 2017</a>
-                            <i class="fa fa-user"></i> <a>邓小帅</a>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div>
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/06/iOS-Screen-rotate-headle.html">0</span> comments
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-html"> </i>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                            <div class="text-center">
+<a class="btn btn-warning  dim btn-large-dim btn-outline" href="/blog/donate/"><i class="fa fa-smile-o"></i></a>
+</div>
+
+                            
+                            <br>
+                            <!-- share -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_wechat"></a>
+<a class="a2a_button_sina_weibo"></a>
+<a class="a2a_button_pocket"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "D7E5ED";
+a2a_config.color_border = "AECADB";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+                            <br>
+                            <!-- comment -->
+                            
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//邓小帅.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="/blog/ios/2017/04/06/iOS-Screen-rotate-headle.html" class="vote-title">
-                            iOS-单独让某个控制器横屏
-                        </a>
-                        <div class="vote-info">
-                        
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/06/iOS-Screen-rotate-headle.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>6 Apr 2017</a>
-                            <i class="fa fa-user"></i> <a>邓小帅</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-html"> </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="/blog/ios/2017/04/05/iOS-dimiss-error-info.html" class="vote-title">
-                            iOS-解决警告“ld: warning: directory not found for option”
-                        </a>
-                        <div class="vote-info">
-                        
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/05/iOS-dimiss-error-info.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>5 Apr 2017</a>
-                            <i class="fa fa-user"></i> <a>邓小帅</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-html"> </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="/blog/ios/2017/04/05/iOS-How-to-play-sound.html" class="vote-title">
-                            iOS-把文字转换成语音播报
-                        </a>
-                        <div class="vote-info">
-                        
-                        
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/05/iOS-How-to-play-sound.html">0</span>)</a>
-                        
-                            <i class="fa fa-clock-o"></i> <a>5 Apr 2017</a>
-                            <i class="fa fa-user"></i> <a>邓小帅</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            <i class="fa icon-html"> </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 
 </div>
-
-
 
 
 	

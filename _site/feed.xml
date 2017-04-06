@@ -5,9 +5,123 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Apr 2017 21:34:17 +0800</pubDate>
-    <lastBuildDate>Wed, 05 Apr 2017 21:34:17 +0800</lastBuildDate>
+    <pubDate>Thu, 06 Apr 2017 11:51:00 +0800</pubDate>
+    <lastBuildDate>Thu, 06 Apr 2017 11:51:00 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>iOS-JSONKit编译报错解决方法</title>
+        <description>&lt;p&gt;如果从github上下来的JSONKit在使用的时候报编译错误，可以按如下的方式尝试解决&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1：Build Phases-&amp;gt;Compile Sources,双击JSONKit.m,输入：-fno-objc-arc
+
+2：修改JSONKit.m文件第680行，修改为object_setClass(array, _JKArrayClass);
+
+3：修改JSONKit.m文件第932行，修改为object_setClass(dictionary, _JKDictionaryClass);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这个使用再去使用JSONKit库，就没问题了。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blog/ios/2017/04/06/iOS-jsonkit-error-handle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/ios/2017/04/06/iOS-jsonkit-error-handle.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-单独让某个控制器横屏</title>
+        <description>&lt;h3 id=&quot;ios程序开发中若要单独让某个控制器横屏可以用如下方法&quot;&gt;iOS程序开发中，若要单独让某个控制器横屏，可以用如下方法：&lt;/h3&gt;
+
+&lt;p&gt;在 AppDelegate.h 添加属性：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;//屏幕方向  
+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSInteger&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;allowRotation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在 AppDelegate.m 添加方法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window  
+ {  
+
+     if (_allowRotation == 1) {  
+
+         return UIInterfaceOrientationMaskLandscapeRight;  
+           
+     }else {  
+
+         return UIInterfaceOrientationMaskPortrait;  
+
+     }  
+ }  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;可以在跳转控制器中设置:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; HWGoalVC *vc = [[HWGoalVC alloc] init];  
+ [self.navigationController presentViewController:vc animated:YES completion:nil]; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在目标控制器中设置：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;  
+ appDelegate.allowRotation = 1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在目标控制器返回时设置：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - (void)back  
+ {  
+
+     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;  
+
+     appDelegate.allowRotation = 0;  
+
+     [self dismissViewControllerAnimated:YES completion:nil];  
+ } 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;若想隐藏StatusBar，可调用如下方法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - (BOOL)prefersStatusBarHidden  
+ {  
+	//iOS7前隐藏StatusBar  
+	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+	//iOS7以后隐藏StatusBar  	
+	return YES;  
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blog/ios/2017/04/06/iOS-Screen-rotate-headle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/ios/2017/04/06/iOS-Screen-rotate-headle.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
+        
+        <category>横屏</category>
+        
+        <category>开发</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
     
       <item>
         <title>iOS-解决警告“ld: warning: directory not found for option”</title>
