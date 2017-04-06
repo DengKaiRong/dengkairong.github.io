@@ -5,9 +5,9 @@ title: 我叫邓小帅
 description: dengsir's blog
 keywords: dengsir,邓小帅,blog,Jekyll,github
 baseurl:  /dengkairong.github.io # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: http://dengkairong.github.io/dengkairong.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
+url: http://dengkairong.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
-img_path: /dengkairong.github.io/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
