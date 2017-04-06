@@ -3,19 +3,19 @@
   <channel>
     <title>我叫邓小帅</title>
     <description>dengsir's blog</description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Apr 2017 12:13:10 +0800</pubDate>
-    <lastBuildDate>Thu, 06 Apr 2017 12:13:10 +0800</lastBuildDate>
+    <link>http://localhost:4000/dengkairong.github.io/</link>
+    <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 06 Apr 2017 16:51:58 +0800</pubDate>
+    <lastBuildDate>Thu, 06 Apr 2017 16:51:58 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>程序员职场进阶忠告</title>
-        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;/blog/static/assets/img/blog/life/忠言.png&quot; width=&quot;85%&quot; /&gt;&lt;/div&gt;
+        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;/dengkairong.github.io/static/assets/img/blog/life/忠言.png&quot; width=&quot;85%&quot; /&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blog/life/2017/04/06/life-jj.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/life/2017/04/06/life-jj.html</guid>
+        <link>http://localhost:4000/dengkairong.github.io/life/2017/04/06/life-jj.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/life/2017/04/06/life-jj.html</guid>
         
         <category>程序员</category>
         
@@ -41,8 +41,8 @@
 &lt;p&gt;这个使用再去使用JSONKit库，就没问题了。&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blog/ios/2017/04/06/iOS-jsonkit-error-handle.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/ios/2017/04/06/iOS-jsonkit-error-handle.html</guid>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/06/iOS-jsonkit-error-handle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/06/iOS-jsonkit-error-handle.html</guid>
         
         <category>iOS</category>
         
@@ -124,8 +124,8 @@
 
 </description>
         <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blog/ios/2017/04/06/iOS-Screen-rotate-headle.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/ios/2017/04/06/iOS-Screen-rotate-headle.html</guid>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/06/iOS-Screen-rotate-headle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/06/iOS-Screen-rotate-headle.html</guid>
         
         <category>iOS</category>
         
@@ -161,8 +161,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blog/ios/2017/04/05/iOS-dimiss-error-info.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/ios/2017/04/05/iOS-dimiss-error-info.html</guid>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/05/iOS-dimiss-error-info.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/05/iOS-dimiss-error-info.html</guid>
         
         <category>iOS</category>
         
@@ -194,8 +194,8 @@ AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc]init];
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blog/ios/2017/04/05/iOS-How-to-play-sound.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/ios/2017/04/05/iOS-How-to-play-sound.html</guid>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/05/iOS-How-to-play-sound.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/05/iOS-How-to-play-sound.html</guid>
         
         <category>iOS</category>
         
