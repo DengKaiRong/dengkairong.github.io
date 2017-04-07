@@ -11,7 +11,6 @@ icon: icon-html
 
 > **Git是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。**
 
-
 ># 1) 远程仓库相关命令
 
 		检出仓库：$ git clone git://github.com/jquery/jquery.git
