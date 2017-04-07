@@ -5,9 +5,47 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/dengkairong.github.io/</link>
     <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Apr 2017 20:36:52 +0800</pubDate>
-    <lastBuildDate>Fri, 07 Apr 2017 20:36:52 +0800</lastBuildDate>
+    <pubDate>Fri, 07 Apr 2017 20:47:09 +0800</pubDate>
+    <lastBuildDate>Fri, 07 Apr 2017 20:47:09 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>iOS-UIWebView获取内容高度和禁用长按手势</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+    //获取内容高度
+    float contentHeight = [[_webView stringByEvaluatingJavaScriptFromString:@&quot;document.body.clientHeight&quot;]floatValue];
+    
+    //webview自适应大小
+    CGRect rect = _webView.frame;
+    rect.size.height = contentHeight;
+    _webView.frame = rect;
+    
+    //回调代理通知高度改变
+    if ([self.delegate respondsToSelector:@selector(qianKunWebCellHeightChange:)]) {
+        [self.delegate qianKunWebCellHeightChange:contentHeight];
+    }
+    
+    //禁用长按手势
+    [_webView stringByEvaluatingJavaScriptFromString:@&quot;document.documentElement.style.webkitUserSelect='none';&quot;];
+    [_webView stringByEvaluatingJavaScriptFromString:@&quot;document.documentElement.style.webkitTouchCallout='none';&quot;];
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/07/iOS-web-get-height.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/07/iOS-web-get-height.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>UIWebView</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
     
       <item>
         <title>iOS-Git命令大全</title>
@@ -244,11 +282,11 @@
         <title>iOS-JSONKit编译报错解决方法</title>
         <description>&lt;p&gt;如果从github上下来的JSONKit在使用的时候报编译错误，可以按如下的方式尝试解决&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1：Build Phases-&amp;gt;Compile Sources,双击JSONKit.m,输入：-fno-objc-arc
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Build Phases-&amp;gt;Compile Sources,双击JSONKit.m,输入：-fno-objc-arc
 
-2：修改JSONKit.m文件第680行，修改为object_setClass(array, _JKArrayClass);
+2. 修改JSONKit.m文件第680行，修改为object_setClass(array, _JKArrayClass);
 
-3：修改JSONKit.m文件第932行，修改为object_setClass(dictionary, _JKDictionaryClass);
+3. 修改JSONKit.m文件第932行，修改为object_setClass(dictionary, _JKDictionaryClass);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
