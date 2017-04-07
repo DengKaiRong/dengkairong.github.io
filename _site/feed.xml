@@ -5,8 +5,8 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/dengkairong.github.io/</link>
     <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Apr 2017 20:47:09 +0800</pubDate>
-    <lastBuildDate>Fri, 07 Apr 2017 20:47:09 +0800</lastBuildDate>
+    <pubDate>Fri, 07 Apr 2017 20:56:27 +0800</pubDate>
+    <lastBuildDate>Fri, 07 Apr 2017 20:56:27 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -263,7 +263,7 @@
     
       <item>
         <title>程序员职场进阶忠告</title>
-        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;/static/assets/img/blog/life/忠言.png&quot; width=&quot;85%&quot; /&gt;&lt;/div&gt;
+        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;/dengkairong.github.io/static/assets/img/blog/life/忠言.png&quot; width=&quot;85%&quot; /&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/dengkairong.github.io/life/2017/04/06/life-jj.html</link>
