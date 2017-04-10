@@ -5,9 +5,90 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/dengkairong.github.io/</link>
     <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Apr 2017 21:03:28 +0800</pubDate>
-    <lastBuildDate>Fri, 07 Apr 2017 21:03:28 +0800</lastBuildDate>
+    <pubDate>Mon, 10 Apr 2017 17:20:40 +0800</pubDate>
+    <lastBuildDate>Mon, 10 Apr 2017 17:20:40 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>iOS-C语言中的格式控制符</title>
+        <description>&lt;blockquote&gt;
+  &lt;h3 id=&quot;格式控制符&quot;&gt;格式控制符：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	％---格式说明引导符。
+	－---指定左对齐输出。
+	0---指定空位填零。
+	m.n --- 指定输出域宽度及精度。
+	l.h---输出长度的修正。
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;格式字符&quot;&gt;格式字符：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	%i---输出一个整型数；
+	%d---输出一个整型数；
+	%f---输出一个浮点数；
+	%e---输出一个浮点数，科学计数法；
+	%g---输出一个浮点数，当指数小于-4或者大于5，则运用科学计数法，否则正常显示浮点数；
+	%c---输出一个字符；
+	%o---输出一个八进制的整型数，前面不带0；
+	%#o---输出一个八进制的整型数，前面带0；
+	%x---输出一个十六进制的整型数，前面不带0x；
+	%#x---输出一个十六进制的整型数，前面带0x, 如果x大写，则显示的时候也是大写。
+	%u---不带符号的十进制整数。
+	%%---输出一个%.
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;转义字符&quot;&gt;转义字符：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	\a:蜂鸣，响铃 
+	\b:回退：向后退一格 
+	\f:换页 
+	\n:换行，光标到下行行首 
+	\r:回车，光标到本行行首 
+	\t:水平制表 
+	\v:垂直制表 
+	\\:反斜杠 
+	\':单引号 
+	\&quot;:双引号 
+	\?:问号 
+	\ddd:三位八进制 
+	\xhh:二位十六进制 
+	\0:空字符(NULL),什么都不做 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;printf的格式控制的完整格式&quot;&gt;printf的格式控制的完整格式：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	%  -  0  m.n  l或h  格式字符
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;下面对组成格式说明的各项加以说明&quot;&gt;下面对组成格式说明的各项加以说明：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	* %：表示格式说明的起始符号，不可缺少。
+	* -：有-表示左对齐输出，如省略表示右对齐输出。
+	* 0：有0表示指定空位填0,如省略表示指定空位不填。
+	* m.n：m指域宽，即对应的输出项在输出设备上所占的字符数。N指精度。用于说明输出的实型数的小数位数。为指定n时，隐含的精度为n=6位。
+	* l或h:l对整型指long型，对实型指double型。h用于将整型的格式字符修正为short型。
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Mon, 10 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/10/iOS-c-format.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/10/iOS-c-format.html</guid>
+        
+        <category>C语言</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
     
       <item>
         <title>iOS-UIWebView获取内容高度和禁用长按手势</title>
