@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% assign categorys = page.categories[0] %}
+
+{% if categorys == "Life" %}
+<script language="javascript">pwd=prompt("请输入授权码:","");if(pwd!="dengsir"){alert("授权码验证失败!");window.history.go(-1);}</script>
+{% endif %}
 
 <div class="wrapper wrapper-content  animated fadeInRight article">
     <div class="row">
