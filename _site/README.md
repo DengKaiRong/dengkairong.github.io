@@ -1,2 +1,5 @@
 # 邓小帅的博客
 
+>本博客网址: www.dengkairong.top
+
+>开源地址: www.jarrekk.com
