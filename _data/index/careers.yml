@@ -1,17 +1,18 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+
 - name:
-    detail: 毕业于广西民族师范学院
-    i18n: company_a
+    detail: 广州金蜜蜂网络科技有限公司
+    i18n: company_b
   desc:
-    detail: 计算机科学与技术专业
-    i18n: company_a_desc
+    detail: 1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能.
+    i18n: company_b_desc
   date:
-    detail: 2011年9月 - 2015年6月
-    i18n: company_a_date
+    detail: 2016年5月 - 至今
+    i18n: company_b_date
   job:
-    detail: 学生
-    i18n: company_a_job
+    detail: iOS部门负责人
+    i18n: company_b_job
   icon: fa-plus-square
 
 - name:
@@ -29,15 +30,15 @@
   icon: fa-plus-square
 
 - name:
-    detail: 广州金蜜蜂网络科技有限公司
-    i18n: company_b
+    detail: 毕业于广西民族师范学院
+    i18n: company_a
   desc:
-    detail: 1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能.
-    i18n: company_b_desc
+    detail: 计算机科学与技术专业
+    i18n: company_a_desc
   date:
-    detail: 2016年5月 - 至今
-    i18n: company_b_date
+    detail: 2011年9月 - 2015年6月
+    i18n: company_a_date
   job:
-    detail: iOS部门负责人
-    i18n: company_b_job
+    detail: 学生
+    i18n: company_a_job
   icon: fa-plus-square
