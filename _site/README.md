@@ -2,4 +2,4 @@
 
 >本博客网址: www.dengkairong.top
 
->开源地址: www.jarrekk.com
+>感谢原作者开源: www.jarrekk.com
