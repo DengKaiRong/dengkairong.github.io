@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "iOS-C语言中的格式控制符"
+title:  "C语言中的格式控制符"
 date: 2017-04-10
-desc: "iOS-C语言中的格式控制符"
+desc: "C语言中的格式控制符"
 keywords: "C语言"
-categories: [iOS]
+categories: [C]
 tags: [C语言]
 icon: icon-html
 ---

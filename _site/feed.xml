@@ -5,12 +5,12 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/dengkairong.github.io/</link>
     <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Apr 2017 17:20:40 +0800</pubDate>
-    <lastBuildDate>Mon, 10 Apr 2017 17:20:40 +0800</lastBuildDate>
+    <pubDate>Mon, 10 Apr 2017 17:30:13 +0800</pubDate>
+    <lastBuildDate>Mon, 10 Apr 2017 17:30:13 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
-        <title>iOS-C语言中的格式控制符</title>
+        <title>C语言中的格式控制符</title>
         <description>&lt;blockquote&gt;
   &lt;h3 id=&quot;格式控制符&quot;&gt;格式控制符：&lt;/h3&gt;
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	％---格式说明引导符。
@@ -80,13 +80,13 @@
 
 </description>
         <pubDate>Mon, 10 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/10/iOS-c-format.html</link>
-        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/10/iOS-c-format.html</guid>
+        <link>http://localhost:4000/dengkairong.github.io/c/2017/04/10/iOS-c-format.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/c/2017/04/10/iOS-c-format.html</guid>
         
         <category>C语言</category>
         
         
-        <category>iOS</category>
+        <category>C</category>
         
       </item>
     
