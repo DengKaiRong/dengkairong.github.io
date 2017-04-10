@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="iOS-C语言中的格式控制符" name="description">
+  
+  
+    <meta name="keywords" content="C语言">
+  
+  <meta name="author" content="邓小帅">
+
+  <title>
+    
+        我叫邓小帅|iOS-C语言中的格式控制符
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/dengkairong.github.io/static/assets/img/favicon.ico">
+
+  <!-- Main CSS -->
+  <link href="/dengkairong.github.io/static/assets/app-20170307.min.css" rel="stylesheet">
+
+  <!-- Main Scripts -->
+  <script src="/dengkairong.github.io/static/assets/app-20170307.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var initial = 0;
+      var show = true;
+
+      var toggleSearch = function (visible) {
+        initial = 0;
+        show = !visible;
+        var visibility = visible ? 'block' : 'none';
+
+        $("#search-content").val("");
+        $(".search-tool").css("display", visibility);
+      };
+
+      var shouldToggle = function (time) {
+        var gap = time - initial;
+        initial = time;
+        return gap < 500;
+      };
+
+      $(document).keyup(function (e) {
+        var now = new Date().getTime();
+        if (e.keyCode == 17 && shouldToggle(now)) {
+          toggleSearch(show);
+        } else if (e.keyCode == 27) {
+          toggleSearch(false);
+        }
+      });
+
+      $("#search-content").keyup(function (e) {
+        var now = new Date().getTime();
+        if (e.keyCode == 17 && shouldToggle(now)) {
+          toggleSearch(show);
+        }
+      });
+
+      $("#close-btn").click(function () {
+        toggleSearch(false);
+      });
+
+      $("#search-btn").click(function() {
+        toggleSearch(true);
+      });
+
+      $.getJSON("/dengkairong.github.io/search/cb-search.json")
+        .done(function (data) {
+          if (data.code == 0) {
+            $("#search-content").typeahead({
+              source: data.data,
+              displayText: function (item) {
+                return item.title;
+              },
+              afterSelect: function (item) {
+                window.location.href = item.url;
+              }
+            });
+          }
+        });
+    });
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+</head>
+
+	
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="/dengkairong.github.io/search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="/dengkairong.github.io/search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/dengkairong.github.io/">我叫邓小帅</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="/dengkairong.github.ioblog/"></a></li>
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/blog/">Blog</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/ios/">IOS</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/reading/">Reading</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/life/">Life</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">iOS</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+            
+                        <h1>
+                            iOS-C语言中的格式控制符
+                        </h1>
+
+                        <span class="text-muted"><i class="fa fa-clock-o"></i> 10 Apr 2017</span>
+                        
+                    </div>
+                    	<blockquote>
+  <h3 id="格式控制符">格式控制符：</h3>
+  <div class="highlighter-rouge"><pre class="highlight"><code>	％---格式说明引导符。
+	－---指定左对齐输出。
+	0---指定空位填零。
+	m.n --- 指定输出域宽度及精度。
+	l.h---输出长度的修正。
+</code></pre>
+  </div>
+</blockquote>
+
+<blockquote>
+  <h3 id="格式字符">格式字符：</h3>
+  <div class="highlighter-rouge"><pre class="highlight"><code>	%i---输出一个整型数；
+	%d---输出一个整型数；
+	%f---输出一个浮点数；
+	%e---输出一个浮点数，科学计数法；
+	%g---输出一个浮点数，当指数小于-4或者大于5，则运用科学计数法，否则正常显示浮点数；
+	%c---输出一个字符；
+	%o---输出一个八进制的整型数，前面不带0；
+	%#o---输出一个八进制的整型数，前面带0；
+	%x---输出一个十六进制的整型数，前面不带0x；
+	%#x---输出一个十六进制的整型数，前面带0x, 如果x大写，则显示的时候也是大写。
+	%u---不带符号的十进制整数。
+	%%---输出一个%.
+</code></pre>
+  </div>
+</blockquote>
+
+<blockquote>
+  <h3 id="转义字符">转义字符：</h3>
+  <div class="highlighter-rouge"><pre class="highlight"><code>	\a:蜂鸣，响铃 
+	\b:回退：向后退一格 
+	\f:换页 
+	\n:换行，光标到下行行首 
+	\r:回车，光标到本行行首 
+	\t:水平制表 
+	\v:垂直制表 
+	\\:反斜杠 
+	\':单引号 
+	\":双引号 
+	\?:问号 
+	\ddd:三位八进制 
+	\xhh:二位十六进制 
+	\0:空字符(NULL),什么都不做 
+</code></pre>
+  </div>
+</blockquote>
+
+<blockquote>
+  <h3 id="printf的格式控制的完整格式">printf的格式控制的完整格式：</h3>
+  <div class="highlighter-rouge"><pre class="highlight"><code>	%  -  0  m.n  l或h  格式字符
+</code></pre>
+  </div>
+</blockquote>
+
+<blockquote>
+  <h3 id="下面对组成格式说明的各项加以说明">下面对组成格式说明的各项加以说明：</h3>
+  <div class="highlighter-rouge"><pre class="highlight"><code>	* %：表示格式说明的起始符号，不可缺少。
+	* -：有-表示左对齐输出，如省略表示右对齐输出。
+	* 0：有0表示指定空位填0,如省略表示指定空位不填。
+	* m.n：m指域宽，即对应的输出项在输出设备上所占的字符数。N指精度。用于说明输出的实型数的小数位数。为指定n时，隐含的精度为n=6位。
+	* l或h:l对整型指long型，对实型指double型。h用于将整型的格式字符修正为short型。
+</code></pre>
+  </div>
+</blockquote>
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">C语言</button>
+                                
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div>
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/10/iOS-c-format.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                            <div class="text-center">
+<a class="btn btn-warning  dim btn-large-dim btn-outline" href="/dengkairong.github.io/donate/"><i class="fa fa-smile-o"></i></a>
+</div>
+
+                            
+                            <br>
+                            <!-- share -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_wechat"></a>
+<a class="a2a_button_sina_weibo"></a>
+<a class="a2a_button_pocket"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "D7E5ED";
+a2a_config.color_border = "AECADB";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+                            <br>
+                            <!-- comment -->
+                            
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//邓小帅.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <!-- Google analytics -->
+
+
+<!-- GrowingIO -->
+
+
+
+
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+    var disqusShortName = "邓小帅";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+	
+
+</body>
+</html>
