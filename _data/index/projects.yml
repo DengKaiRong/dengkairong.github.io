@@ -2,7 +2,7 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 
-- name: 爱牛股
+- name: 爱牛股(现已下架)
   i18n: familycode
   img: /static/assets/img/landing/ainiuguLogo.png
   desc: 本人所负责的APP项目之一.</br>爱牛股是由广州金蜜蜂网络科技专为股民推出的一款炒股资讯平台。爱牛股致力于为投资者提供专业、合规、便捷的投资服务。
@@ -21,6 +21,11 @@
   i18n: familycode
   img: /static/assets/img/landing/pkdsLogo.png
   desc: 本人所负责的APP项目之一.</br>盘口大师，是集大数据诊股、智能选股、在线问股、组合以及视频直播于一体的综合性炒股(金融/投资/理财/诊股)平台，我们希望做您身边的股票专家，让您的每一笔投资都有价值。
+
+- name: 五星客服
+  i18n: familycode
+  img: /static/assets/img/landing/wuxingkefuLogo.png
+  desc: 本人所负责的APP项目之一.</br>IM项目,用于公司业务团队对决策天机、金决策、盘口大师等APP客户进行即时通信,集成腾讯云通信SDK,整合后台数据,支持单聊、群发、自定义消息、新闻等聊天形式。
 
 - name: MyBlog
   i18n: jalpc
