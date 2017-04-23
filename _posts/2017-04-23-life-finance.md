@@ -3,7 +3,7 @@ layout: post
 title:  "2017年4月23日财务状况"
 date: 2017-04-23
 desc: "2017年4月23日财务状况"
-keywords: "Life
+keywords: "Life"
 categories: [Life]
 tags: [程序员,财务]
 icon: icon-html
