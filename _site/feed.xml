@@ -5,9 +5,218 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/dengkairong.github.io/</link>
     <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Apr 2017 17:19:50 +0800</pubDate>
-    <lastBuildDate>Wed, 19 Apr 2017 17:19:50 +0800</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <pubDate>Sun, 23 Apr 2017 17:41:18 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 17:41:18 +0800</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>2017年4月23日财务状况</title>
+        <description>&lt;h1 id=&quot;2017-04-23-财务状况&quot;&gt;2017-04-23 财务状况&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;资产&quot;&gt;资产&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;钱包&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;现金若干&lt;/td&gt;
+      &lt;td&gt;忽略不计&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;支付宝&lt;/td&gt;
+      &lt;td&gt;938.72&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;微信&lt;/td&gt;
+      &lt;td&gt;267.67&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;民生银行&lt;/td&gt;
+      &lt;td&gt;6230.79&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;建设银行&lt;/td&gt;
+      &lt;td&gt;8.25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;中国银行&lt;/td&gt;
+      &lt;td&gt;44.49&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;招商证券股票&lt;/td&gt;
+      &lt;td&gt;2181(亏409.03)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;随手记理财&lt;/td&gt;
+      &lt;td&gt;6250.29&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;桔子理财&lt;/td&gt;
+      &lt;td&gt;1293.77&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计资产&lt;/td&gt;
+      &lt;td&gt;17214.99&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;负债&quot;&gt;负债&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;债主&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分期乐&lt;/td&gt;
+      &lt;td&gt;18294.89(含所有利息)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;花呗&lt;/td&gt;
+      &lt;td&gt;3007.13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;招商信用卡&lt;/td&gt;
+      &lt;td&gt;9931.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;广发信用卡&lt;/td&gt;
+      &lt;td&gt;3582.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;百度有钱&lt;/td&gt;
+      &lt;td&gt;4902.93&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;微粒贷&lt;/td&gt;
+      &lt;td&gt;4274.5(含利息)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;网商银行&lt;/td&gt;
+      &lt;td&gt;166.74&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;陈雷&lt;/td&gt;
+      &lt;td&gt;7000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;林域&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;谢晓锋&lt;/td&gt;
+      &lt;td&gt;4000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;方总&lt;/td&gt;
+      &lt;td&gt;10000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计负债&lt;/td&gt;
+      &lt;td&gt;67110.22&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;4月应还&quot;&gt;4月应还&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;债主&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分期乐&lt;/td&gt;
+      &lt;td&gt;2003.26&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;网商银行&lt;/td&gt;
+      &lt;td&gt;166.74&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计4月应还&lt;/td&gt;
+      &lt;td&gt;2170&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;5月预计应还&quot;&gt;5月预计应还&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;债主&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;微粒贷&lt;/td&gt;
+      &lt;td&gt;560&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;房租&lt;/td&gt;
+      &lt;td&gt;500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;招商信用卡&lt;/td&gt;
+      &lt;td&gt;4764.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;花呗&lt;/td&gt;
+      &lt;td&gt;1280.96&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;广发信用卡&lt;/td&gt;
+      &lt;td&gt;662.21&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;百度有钱&lt;/td&gt;
+      &lt;td&gt;1634.31&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分期乐&lt;/td&gt;
+      &lt;td&gt;1889.79&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计5月应还&lt;/td&gt;
+      &lt;td&gt;11291.32&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dengkairong.github.io/life/2017/04/23/life-finance.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/life/2017/04/23/life-finance.html</guid>
+        
+        <category>程序员</category>
+        
+        <category>财务</category>
+        
+        
+        <category>Life</category>
+        
+      </item>
     
       <item>
         <title>C语言中的格式控制符</title>
