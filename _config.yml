@@ -52,7 +52,7 @@ encoding: utf-8
 
 # other settings
 highlighter: rouge
-markdown: kramdown
-kramdown: rouge
+markdown: kramdow
+kramdown: 
 input: GFM
 syntax_highlighter: rouge
