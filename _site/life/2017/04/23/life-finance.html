@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="2017年4月23日财务状况" name="description">
+  
+  
+    <meta name="keywords" content="Life">
+  
+  <meta name="author" content="邓小帅">
+
+  <title>
+    
+        我叫邓小帅|2017年4月23日财务状况
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/dengkairong.github.io/static/assets/img/favicon.ico">
+
+  <!-- Main CSS -->
+  <link href="/dengkairong.github.io/static/assets/app-20170307.min.css" rel="stylesheet">
+
+  <!-- Main Scripts -->
+  <script src="/dengkairong.github.io/static/assets/app-20170307.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var initial = 0;
+      var show = true;
+
+      var toggleSearch = function (visible) {
+        initial = 0;
+        show = !visible;
+        var visibility = visible ? 'block' : 'none';
+
+        $("#search-content").val("");
+        $(".search-tool").css("display", visibility);
+      };
+
+      var shouldToggle = function (time) {
+        var gap = time - initial;
+        initial = time;
+        return gap < 500;
+      };
+
+      $(document).keyup(function (e) {
+        var now = new Date().getTime();
+        if (e.keyCode == 17 && shouldToggle(now)) {
+          toggleSearch(show);
+        } else if (e.keyCode == 27) {
+          toggleSearch(false);
+        }
+      });
+
+      $("#search-content").keyup(function (e) {
+        var now = new Date().getTime();
+        if (e.keyCode == 17 && shouldToggle(now)) {
+          toggleSearch(show);
+        }
+      });
+
+      $("#close-btn").click(function () {
+        toggleSearch(false);
+      });
+
+      $("#search-btn").click(function() {
+        toggleSearch(true);
+      });
+
+      $.getJSON("/dengkairong.github.io/search/cb-search.json")
+        .done(function (data) {
+          if (data.code == 0) {
+            $("#search-content").typeahead({
+              source: data.data,
+              displayText: function (item) {
+                return item.title;
+              },
+              afterSelect: function (item) {
+                window.location.href = item.url;
+              }
+            });
+          }
+        });
+    });
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+</head>
+
+	
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="/dengkairong.github.io/search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="/dengkairong.github.io/search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/dengkairong.github.io/">我叫邓小帅</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="/dengkairong.github.ioblog/"></a></li>
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/blog/">Blog</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/ios/">IOS</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/c/">C</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/reading/">Reading</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="/dengkairong.github.io/life/">Life</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+    
+
+
+<script language="javascript">pwd=prompt("请输入授权码:","");if(pwd!="dengsir"){alert("授权码验证失败!");window.history.go(-1);}</script>
+
+
+<div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">Life</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+            
+                        <h1>
+                            2017年4月23日财务状况
+                        </h1>
+
+                        <span class="text-muted"><i class="fa fa-clock-o"></i> 23 Apr 2017</span>
+                        
+                    </div>
+                    	<h1 id="2017-04-23-财务状况">2017-04-23 财务状况</h1>
+
+<blockquote>
+  <h2 id="资产">资产</h2>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>钱包</th>
+      <th>金额（元）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>现金若干</td>
+      <td>忽略不计</td>
+    </tr>
+    <tr>
+      <td>支付宝</td>
+      <td>938.72</td>
+    </tr>
+    <tr>
+      <td>微信</td>
+      <td>267.67</td>
+    </tr>
+    <tr>
+      <td>民生银行</td>
+      <td>6230.79</td>
+    </tr>
+    <tr>
+      <td>建设银行</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <td>中国银行</td>
+      <td>44.49</td>
+    </tr>
+    <tr>
+      <td>招商证券股票</td>
+      <td>2181(亏409.03)</td>
+    </tr>
+    <tr>
+      <td>随手记理财</td>
+      <td>6250.29</td>
+    </tr>
+    <tr>
+      <td>桔子理财</td>
+      <td>1293.77</td>
+    </tr>
+    <tr>
+      <td>总计资产</td>
+      <td>17214.99</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <h2 id="负债">负债</h2>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>债主</th>
+      <th>金额（元）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>分期乐</td>
+      <td>18294.89(含所有利息)</td>
+    </tr>
+    <tr>
+      <td>花呗</td>
+      <td>3007.13</td>
+    </tr>
+    <tr>
+      <td>招商信用卡</td>
+      <td>9931.98</td>
+    </tr>
+    <tr>
+      <td>广发信用卡</td>
+      <td>3582.05</td>
+    </tr>
+    <tr>
+      <td>百度有钱</td>
+      <td>4902.93</td>
+    </tr>
+    <tr>
+      <td>微粒贷</td>
+      <td>4274.5(含利息)</td>
+    </tr>
+    <tr>
+      <td>网商银行</td>
+      <td>166.74</td>
+    </tr>
+    <tr>
+      <td>陈雷</td>
+      <td>7000</td>
+    </tr>
+    <tr>
+      <td>林域</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>谢晓锋</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>方总</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <td>总计负债</td>
+      <td>67110.22</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <h2 id="4月应还">4月应还</h2>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>债主</th>
+      <th>金额（元）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>分期乐</td>
+      <td>2003.26</td>
+    </tr>
+    <tr>
+      <td>网商银行</td>
+      <td>166.74</td>
+    </tr>
+    <tr>
+      <td>总计4月应还</td>
+      <td>2170</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <h2 id="5月预计应还">5月预计应还</h2>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>债主</th>
+      <th>金额（元）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>微粒贷</td>
+      <td>560</td>
+    </tr>
+    <tr>
+      <td>房租</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>招商信用卡</td>
+      <td>4764.05</td>
+    </tr>
+    <tr>
+      <td>花呗</td>
+      <td>1280.96</td>
+    </tr>
+    <tr>
+      <td>广发信用卡</td>
+      <td>662.21</td>
+    </tr>
+    <tr>
+      <td>百度有钱</td>
+      <td>1634.31</td>
+    </tr>
+    <tr>
+      <td>分期乐</td>
+      <td>1889.79</td>
+    </tr>
+    <tr>
+      <td>总计5月应还</td>
+      <td>11291.32</td>
+    </tr>
+  </tbody>
+</table>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">程序员</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">财务</button>
+                                
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div>
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/life/2017/04/23/life-finance.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                            <br>
+                            <!-- share -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_wechat"></a>
+<a class="a2a_button_sina_weibo"></a>
+<a class="a2a_button_pocket"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "D7E5ED";
+a2a_config.color_border = "AECADB";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+                            <br>
+                            <!-- comment -->
+                            
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//邓小帅.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <!-- Google analytics -->
+
+
+<!-- GrowingIO -->
+
+
+
+
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+    var disqusShortName = "邓小帅";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+	
+
+</body>
+</html>
