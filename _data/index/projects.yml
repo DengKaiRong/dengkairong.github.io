@@ -2,7 +2,7 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 
-- name: 爱牛股(现已下架)
+- name: 爱牛股
   i18n: familycode
   img: /static/assets/img/landing/ainiuguLogo.png
   desc: 本人所负责的APP项目之一.</br>爱牛股是由广州金蜜蜂网络科技专为股民推出的一款炒股资讯平台。爱牛股致力于为投资者提供专业、合规、便捷的投资服务。
