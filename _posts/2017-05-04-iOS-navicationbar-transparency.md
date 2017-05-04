@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "iOS-设置导航栏透明的方法"
-date: 2017-04-05
+date: 2017-05-04
 desc: "iOS-设置导航栏透明的方法"
 keywords: "iOS"
 categories: [iOS]
