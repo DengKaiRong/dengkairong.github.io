@@ -5,8 +5,8 @@
     <description>dengsir's blog</description>
     <link>http://localhost:4000/dengkairong.github.io/</link>
     <atom:link href="http://localhost:4000/dengkairong.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Apr 2017 20:06:56 +0800</pubDate>
-    <lastBuildDate>Fri, 28 Apr 2017 20:06:56 +0800</lastBuildDate>
+    <pubDate>Thu, 04 May 2017 11:09:18 +0800</pubDate>
+    <lastBuildDate>Thu, 04 May 2017 11:09:18 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -695,6 +695,39 @@
         <category>横屏</category>
         
         <category>开发</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-设置导航栏透明的方法</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)viewWillAppear:(BOOL)animated{
+
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+
+    //去掉透明后导航栏下边的黑边
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+
+    //    如果不想让其他页面的导航栏变为透明 需要重置
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 05 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dengkairong.github.io/ios/2017/04/05/iOS-navicationbar-transparency.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dengkairong.github.io/ios/2017/04/05/iOS-navicationbar-transparency.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
         
         
         <category>iOS</category>
