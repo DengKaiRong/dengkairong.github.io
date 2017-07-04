@@ -37,4 +37,24 @@
   gh_user: dengkairong
   repo: blog
   img: /static/assets/img/landing/githubLogo.png
-  desc: 本博客的github开源项目.
+  desc: 本博客的github开源项目. </br>采用Jalpc模板, Jalpc is a simple, beautiful and swift theme for Jekyll.
+  star: _2
+  fork: _1
+
+- name: KRPopupview
+  i18n: jalpc
+  gh_user: dengkairong
+  repo: KRPopupview
+  img: /static/assets/img/landing/dh.gif
+  desc: KRPopupview with animation effects.
+  star: _3
+  fork: _1
+
+- name: KRKeyboard
+  i18n: jalpc
+  gh_user: dengkairong
+  repo: KRKeyboard
+  img: /static/assets/img/landing/keyboardLogo.jpg
+  desc: A multi-function keyboard.
+  star: _26
+  fork: _3
